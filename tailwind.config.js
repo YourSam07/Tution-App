@@ -12,8 +12,8 @@ module.exports = {
     //   "white": "#ffffff",
     // },
     fontFamily: {
-      sans: ['Open Sans', 'sans-serif'],
-      serif: ['Playfair Display', 'serif'],
+      sans: ['DM Sans', 'sans-serif'],
+      serif: ['Poppins', 'serif'],
     },
   },
   plugins: [],

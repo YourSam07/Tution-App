@@ -1,7 +1,7 @@
 import React from 'react'
 import "../index.css"
-import Director from "../assets/Director.jpg"
-import MDirector from "../assets/Managing Director.jpeg"
+import Director from "../assets/images/Director.jpg"
+import MDirector from "../assets/images/Managing Director.jpeg"
 import about from "../assets/bgs/about.jpg"
 import Quotes from "../assets/bgs/quotes.png"
 
@@ -9,11 +9,11 @@ const About = () => {
   return (
     <div className="flex flex-col ">
       <div className="flex lg:gap-4">
-        <div className="lg:flex p-4 scale-85 lg:w-1/3 hidden ">
-          <img src={about} alt="about" className='rounded-lg shadow-md hidden lg:block' />
+        <div className="lg:flex p-4 hidden ">
+          <img src={about} alt="about" className='object-fill rounded-lg shadow-md hidden lg:flex' />
         </div>
         <div className="content lg:w-2/3 p-4 font-serif about">
-          <div className="header text-red-500 font-bold text-3xl">The Gravity Academy</div>
+          <div className="font-bold text-3xl">The Gravity Academy</div>
           <p className='p-4'>The Gravity Academy is an educational institute thar offers very uniquely designed courses for various Engineering and medical Entrance Exams.</p>
           <div className="flex flex-col">
             <div className='rounded-lg shadow-lg p-8 lg:ml-20 bg-white'>
@@ -52,10 +52,11 @@ const About = () => {
         <div className='text-3xl font-bold font-serif text-center'>Desk of Directors</div>
         <div className='flex flex-col xl:flex-row'>
           <div className="data relative xl:flex-1">
-            <img src={Quotes} alt="quotes" className='h-16 w-16 absolute -left-5' />
+            <img src={Quotes} alt="quotes" className='h-36 w-36 absolute -left-2 -top-5 opacity-30' />
             <div className='p-8'>
               <span className='text-extrabold text-lg'>D</span>ear Students, Welcome to The Gravity Academy ! It is indeed a matter of immense pride that aour student compete at the national and international level for various courses and secure the top position Or adequate source of expert guidance and counsel for aspirants in respective fields cater to a large student community. the young genration will make the future of our country and at The Gravity Academy; we tirelessly put our best endeavours to make the students reach the paramount. the sucess of The Gravity Academy is based on the success of students. We infuse in them the attitude that does not let them settle before mounting the heights of success and deriving the best not only academically but also socially. We believe in innovation and excellence and this is why we are the proven boon to engineering & medical aspirants. Since inceptio, The Gravity Academy has emerged as the most preferred coaching institute for IIT-JEE-AIIMS,JIPMER,KVPY,NITSE, Olymoiads and other entrance exam preparation. We welcome students to come and explore their potential and experience the fun of learning. Dreamimg big, breaking the barries and achieving it the only right path to success! with best wishes, Best Regards !!!
             </div>
+            <img src={Quotes} alt="quotes" className='h-36 w-36 absolute lg:right-20 lg:bottom-20 right-0 bottom-0 opacity-30 rotate-180' />
           </div>
           <div className="rounded-lg shadow-lg relative h-[450px] w-[350px] overflow-hidden mx-auto xl:order-first">
             <img src={Director} alt="Director" className='h-[450px] w-[350px]' />

@@ -1,11 +1,20 @@
 import React from 'react'
+import HeroSec from '../components/HeroSec'
+import CountUpComponent from '../components/CountUpComponent'
+import Courses from "../components/Courses"
+import WhyComp from '../components/WhyComp'
+import Testimonial from '../components/Testimonial'
 
 const Home = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline text-green">
-        home page
-      </h1>
+      <HeroSec />
+      <WhyComp />
+      <Courses />
+      <CountUpComponent />
+      <Testimonial />
+      
+
     </div>
   )
 }

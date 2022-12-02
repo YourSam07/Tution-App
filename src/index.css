@@ -94,19 +94,81 @@
 } */
 
 
-.contactBg2{
+.contactBg2 {
   background: url("./assets/bgs/Colored\ Patterns.svg") no-repeat;
   background-size: cover;
 }
 
-.about{
+.about {
   background: url("./assets/bgs/aboutCP2.svg") no-repeat;
   background-size: cover;
 }
 
-.misvis{
+.misvis {
   background: url("./assets/bgs/bgvismis.png") no-repeat;
   background-size: cover;
+}
+
+.whybg {
+  background: url("./assets/bgs/aboutCP.svg") no-repeat;
+  background-size: cover;
+}
+
+.coursebg {
+  background: url("./assets/bgs/some.png") no-repeat;
+  background-size: contain;
+}
+
+.ani {
+  animation: fadeIn 5s ease;
+}
+
+.aniD1{
+  animation: fadeIn 3s ease;
+}
+
+.aniD2{
+  animation: fadeIn 3s ease 1s;
+}
+.testimonialCard {
+  width: 80%;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  opacity: 0.7;
+  transform: scale(0.7);
+  transition: all 0.5s ease 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonialCardActive{
+  /* height: 70vh;
+  width: 35vw;
+  max-width: 600px;
+  max-height: 450px; */
+  width: 80%;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.5s ease 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -114,12 +176,12 @@
     display: none;
   }
 
-  .mobile__menu{
+  .mobile__menu {
     display: flex;
   }
 
-  .slide__menu{
-    position:absolute;
+  .slide__menu {
+    position: absolute;
     z-index: 2;
     background-color: #e41c24;
     top: 10vh;
@@ -136,16 +198,20 @@
     font-size: 1.1rem;
   }
 
-  .mobile__submenu{
+  .mobile__submenu {
     background-color: #e79c9f;
     font-size: 1rem;
     padding: 0.5rem 0;
   }
 
 
-  @keyframes slideLeft{
-    from {right: -100% }
-    to {right: 0%}
+  @keyframes slideLeft {
+    from {
+      right: -100%
+    }
+
+    to {
+      right: 0%
+    }
   }
 }
-

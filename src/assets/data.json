@@ -60,5 +60,32 @@
     "img58": "gal60@.jpeg",
     "img59": "gal26@.jpg",
     "img60": "labbb.jpg"
-  }
+  },
+  "details": [
+    {
+      "idx": 1,
+      "img": "./gallery/Aditi Bondre.png",
+      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro."
+    },
+    {
+      "idx": 2,
+      "img": "./gallery/Rohit Rahangdale.png",
+      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro."
+    },
+    {
+      "idx": 3,
+      "img": "./gallery/Vivek Rahangdale.png",
+      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro."
+    },
+    {
+      "idx": 4,
+      "img": "./gallery/Anuj Singh.png",
+      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro."
+    },
+    {
+      "idx": 5,
+      "img": "./gallery/Avni Ridhorkar.png",
+      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro."
+    }
+  ]
 }
