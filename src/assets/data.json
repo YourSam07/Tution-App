@@ -66,35 +66,35 @@
       "idx": 1,
       "img": "./gallery/Aditi Bondre.png",
       "name": "Aditi Bondre",
-      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro.",
+      "content": "With Gravity, I reached where I am today. Thanks MR. ABhinav for guiding me throughout my journey.",
       "selected": "VNIT Nagpur"
     },
     {
       "idx": 2,
       "img": "./gallery/Rohit Rahangdale.png",
       "name": "Rohit Rahangdale",
-      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro.",
+      "content": "The intensive study program helped me a lot to study for long hours, due which I was able to crack my exams.",
       "selected": "N.K.P. Salve Medical College, Nagpur (M.B.B.S.)"
     },
     {
       "idx": 3,
       "img": "./gallery/Vivek Rahangdale.png",
       "name": "Vivek Rahangdale",
-      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro.",
+      "content": "With Gravity, I reached where I am today. Thanks MR. ABhinav for guiding me throughout my journey.",
       "selected": "AIIMS Nagpur (M.B.B.S.)"
     },
     {
       "idx": 4,
       "img": "./gallery/Anuj Singh.png",
       "name": "Anuj Singh",
-      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro.",
+      "content": "The intensive study program helped me a lot to study for long hours, due which I was able to crack my exams.",
       "selected": "VNIT Nagpur"
     },
     {
       "idx": 5,
       "img": "./gallery/Avni Ridhorkar.png",
       "name": "Avni Ridhorkar",
-      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro.",
+      "content": "With Gravity, I reached where I am today. Thanks MR. ABhinav for guiding me throughout my journey.",
       "selected": "NIT Raipur"
     }
   ]

@@ -3,7 +3,7 @@ import Slider from 'react-slick'
 import data from "../assets/data.json"
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import { FaStar } from "react-icons/fa"
+// import { FaStar } from "react-icons/fa"
 import Quotes from "../assets/bgs/quotes.png"
 import { useInView } from 'react-intersection-observer'
 

@@ -160,9 +160,11 @@
   transition: opacity 5s ease;
 }.aniBox5{
   animation: box 2s ease;
+  transition: opacity 5s ease;
   animation-delay: 800ms;
 }.aniBox6{
   animation: box 2s ease;
+  transition: opacity 5s ease;
   animation-delay: 1000ms;
 }
 
