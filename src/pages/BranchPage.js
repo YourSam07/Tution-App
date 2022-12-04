@@ -1,6 +1,10 @@
 import React from 'react'
-
+import { useInView } from 'react'
 const BranchPage = () => {
+  const { ref, inView} = useInView({
+    threshold: 0,
+    triggerOnce: true
+  })
   return (
     <div className='px-8 py-8 md:px-16'>
       <div className="flex flex-col ">
@@ -9,7 +13,7 @@ const BranchPage = () => {
       </div>
 
       <div className="flex flex-col mt-16">
-        <div id="square" className="flex flex-col md:flex-row items-center justify-between w-full h-[90vh]">
+        <div id="square" className="flex flex-col md:flex-row items-center justify-between w-full h-[50vh]">
           <div className='flex flex-col'>
             <h2 className='font-serif font-extrabold text-[2rem]'>Head Office Address</h2>
             <h4 className='font-sans text-xl'>Chattrapati Sq.,6A, Matruchhaya Modern Society Nagpur</h4>
@@ -21,7 +25,7 @@ const BranchPage = () => {
           </div>
 
         </div>
-        <div id="omkar" className="flex flex-col md:flex-row-reverse my-24 items-center gap-12 w-full h-[90vh]">
+        <div id="omkar" className="flex flex-col md:flex-row-reverse my-24 items-center gap-12 w-full h-[50vh]">
           <div className='flex flex-col'>
             <h2 className='font-serif font-extrabold text-[2rem]'>Branch Office Address</h2>
             <h4 className='font-sans text-xl'>Omkar Nagar Near Era International School Residential Campus Nagpur</h4>

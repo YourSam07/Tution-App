@@ -3,7 +3,10 @@ import CountUp from 'react-countup'
 import { useInView } from 'react-intersection-observer'
 
 const CountUpComponent = () => {
-  const {inView, ref} = useInView()
+  const { ref, inView} = useInView({
+    threshold: 0,
+    triggerOnce: true
+  })
   return (
     <div className="bg-red-500 text-white font-sans p-4 flex flex-wrap justify-around my-8">
       <div className="grid place-items-center mx-4">

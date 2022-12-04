@@ -11,7 +11,10 @@ import circle2 from  "../assets/bgs/full-moon.png"
 
 
 const WhyComp = () => {
-  const {inView, ref} = useInView()
+  const { ref, inView} = useInView({
+    threshold: 0,
+    triggerOnce: true
+  })
   return (
     <div className='flex flex-col justify-center items-center p-4 mt-4'>
       <div ref={ref} className={inView ? "text-center mb-8 relative aniD1" : ""}>

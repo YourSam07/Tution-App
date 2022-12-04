@@ -10,7 +10,10 @@ import { useInView } from 'react-intersection-observer'
 export default function Carousel() {
   const [sliderRef, setSliderRef] = useState(null)
   const [dataIndex, setdataIndex] = useState(0);
-  const { ref, inView} = useInView()
+  const { ref, inView} = useInView({
+    threshold: 0,
+    triggerOnce: true
+  })
   const sliderSettings = {
     dots: true,
     centerMode: "true",

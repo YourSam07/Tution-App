@@ -8,16 +8,17 @@ import { useInView } from 'react-intersection-observer'
 const HeroSec = () => {
 
   const { ref, inView} = useInView({
-    threshold: 0
+    threshold: 0,
+    triggerOnce: true
   })
-  console.log(inView, "inView")
+  // console.log(inView, "inView")
   return (
     <div className="flex md:flex-row flex-col gap-16 lg:p-12 md:p-4 min-h-[90vh]">
       <div ref={ref} className="md:p-4 px-8 pt-8 flex flex-col md:w-[60%] w-full justify-center">
         <h4 ref={ref} className={inView ? 'text-amber-400 uppercase font-bold font-sans lg:text-3xl aniD1' : "opacity-0"}>100% Satisfaction Guarantee</h4>
         <div ref={ref} className={inView ? 'xl:text-[4.5rem] lg:text-[3rem] md:text-[2.3rem] sm:text-[2.2rem] text-[2rem] font-extrabold font-serif ani' : "opacity-0"}>Get Quality Coaching from Nagpur's best</div>
         <p ref={ref} className={inView ? 'font-serif lg:text-xl mb-2 aniD2' : "opacity-0"}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, placeat.</p>
-        <button ref={ref} className={inView ? 'py-3 mx-0 font-bold font-sans lg:text-xl md:text-lg rounded-3xl shadow-lg lg:w-[25%] md:w-[40%] sm:w-[30%] w-[35%] mt-4 bg-[#fed05b] hover:bg-[#fed0cb] hover:cursor-pointer aniD2' : "hidden"}>Know More</button>
+        <button ref={ref} className={inView ? 'py-3 mx-0 font-bold font-sans lg:text-xl md:text-lg rounded-3xl shadow-lg lg:w-[25%] md:w-[40%] sm:w-[30%] w-[35%] mt-4 bg-[#fed05b] hover:bg-[#fed0cb] hover:cursor-pointer aniD2' : "opacity-0"}>Know More</button>
       </div>
       <div className='bg-yellow flex flex-col justify-center md:items-end items-center gap-3'>
         <div className='flex gap-3 relative'>
