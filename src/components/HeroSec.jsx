@@ -13,7 +13,7 @@ const HeroSec = () => {
   console.log(inView, "inView")
   return (
     <div className="flex md:flex-row flex-col gap-16 lg:p-12 md:p-4 min-h-[90vh]">
-      <div ref={ref} className="md:p-4 px-8 pt-8 flex flex-col lg:w-[60%] w-full justify-center">
+      <div ref={ref} className="md:p-4 px-8 pt-8 flex flex-col md:w-[60%] w-full justify-center">
         <h4 ref={ref} className={inView ? 'text-amber-400 uppercase font-bold font-sans lg:text-3xl aniD1' : "opacity-0"}>100% Satisfaction Guarantee</h4>
         <div ref={ref} className={inView ? 'xl:text-[4.5rem] lg:text-[3rem] md:text-[2.3rem] sm:text-[2.2rem] text-[2rem] font-extrabold font-serif ani' : "opacity-0"}>Get Quality Coaching from Nagpur's best</div>
         <p ref={ref} className={inView ? 'font-serif lg:text-xl mb-2 aniD2' : "opacity-0"}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, placeat.</p>
@@ -28,7 +28,7 @@ const HeroSec = () => {
           </div>
           <div className="grid place-items-center bg-[#ffa8ca] rounded-lg overflow-hidden shadow-lg">
             <img src={two} alt="" className='xl:h-48 xl:w-48 lg:h-40 lg:w-40 md:h-24 md:w-24 sm:h-48 sm:w-48 h-32 w-32' />
-            <div className='bg-[#fed05b] md:h-40 md:w-40 h-24 w-24 rounded-full absolute -top-[15%] left-[72%] -z-10'></div>
+            <div className='bg-[#fed05b] xl:h-40 xl:w-40 lg:h-32 lg:w-32 md:h-24 md:w-24 h-24 w-24 rounded-full absolute -top-[15%] left-[72%] -z-10'></div>
           </div>
         </div>
         <div className="flex gap-3 relative">

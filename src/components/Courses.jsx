@@ -5,10 +5,12 @@ import kvpy from "../assets/bgs/kvpy.png"
 import mhtcet from "../assets/bgs/mhtcet.png"
 import nda from "../assets/bgs/nda.png"
 import neet from "../assets/bgs/neet.png"
+import circle3 from "../assets/bgs/circle3.png"
 
 const Courses = () => {
   return (
-    <div className='text-center lg:px-12 my-10 '>
+    <div className='text-center lg:px-12 my-10 relative '>
+      <img src={circle3} alt="circle3" className='absolute left-[37%] top-[50%] -z-10'/>
       <h1 className="font-bold text-3xl font-serif mb-8">Courses Taught</h1>
       <div className="flex flex-wrap gap-12 justify-center items-center md:items-end">
         <div className="p-4 px-16 bg-white rounded-md shadow-lg grid place-items-center">

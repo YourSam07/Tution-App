@@ -65,27 +65,37 @@
     {
       "idx": 1,
       "img": "./gallery/Aditi Bondre.png",
-      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro."
+      "name": "Aditi Bondre",
+      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro.",
+      "star": 5
     },
     {
       "idx": 2,
       "img": "./gallery/Rohit Rahangdale.png",
-      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro."
+      "name": "Rohit Rahangdale",
+      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro.",
+      "star": 5
     },
     {
       "idx": 3,
       "img": "./gallery/Vivek Rahangdale.png",
-      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro."
+      "name": "Vivek Rahangdale",
+      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro.",
+      "star": 4
     },
     {
       "idx": 4,
       "img": "./gallery/Anuj Singh.png",
-      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro."
+      "name": "Anuj Singh",
+      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro.",
+      "star": 4
     },
     {
       "idx": 5,
       "img": "./gallery/Avni Ridhorkar.png",
-      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro."
+      "name": "Avni Ridhorkar",
+      "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro.",
+      "star": 5
     }
   ]
 }

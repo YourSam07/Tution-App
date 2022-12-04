@@ -119,48 +119,60 @@
   background-size: contain;
 }
 
+.branchBg{
+  background: url("./assets/bgs/worldmap.png") no-repeat;
+  background-size: cover;
+}
+
 .ani {
   animation: fadeIn 5s ease;
 }
 
 .aniD1{
-  animation: fadeIn 3s ease;
+  animation: fadeIn 3s ease 0.5s;
 }
 
 .aniD2{
   animation: fadeIn 3s ease 1s;
 }
-.testimonialCard {
-  width: 80%;
-  background-color: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  opacity: 0.7;
-  transform: scale(0.7);
-  transition: all 0.5s ease 0s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.aniBox1{
+  animation: box 2s ease;
 }
 
-.testimonialCardActive{
-  /* height: 70vh;
-  width: 35vw;
-  max-width: 600px;
-  max-height: 450px; */
-  width: 80%;
-  padding: 2rem;
-  background-color: white;
-  border-radius: 1rem;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  opacity: 1;
-  transform: scale(1);
-  transition: all 0.5s ease 0s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.aniBox2{
+  animation: box 2s ease;
+  animation-delay: 200ms;
 }
+.aniBox3{
+  animation: box 2s ease;
+  animation-delay: 400ms;
+}
+.aniBox4{
+  animation: box 2s ease;
+  animation-delay: 600ms;
+}.aniBox5{
+  animation: box 2s ease;
+  animation-delay: 800ms;
+}.aniBox6{
+  animation: box 2s ease;
+  animation-delay: 1000ms;
+}
+
+.aniBox7{
+  animation: box2 2s ease;
+}
+
+@keyframes box {
+  0% { transform: translateX(-100%);}
+  100% {transform: translateX(0%);}
+}
+
+@keyframes box2{
+  0% {transform: translateX(100%)}
+  100% {transform: translateX(0%)}
+}
+
 
 @keyframes fadeIn {
   0% {

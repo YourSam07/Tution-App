@@ -4,8 +4,8 @@ import { GiHamburgerMenu } from "react-icons/gi"
 import { AiOutlineClose } from "react-icons/ai"
 
 const branches = [
-  { name: "Chattrapti Sqaure", link: "/branches" },
-  { name: "Omkar Nagar", link: "/branches" },
+  { name: "Chattrapti Sqaure", link: "/branches/#square" },
+  { name: "Omkar Nagar", link: "/branches/#omkar" },
 ]
 
 const courses = [
@@ -114,7 +114,7 @@ const Navbar = () => {
 
 const Submenu = ({ arr }) => {
   return (
-    <ul className="nav__submenu">
+    <ul className="nav__submenu z-20">
       {arr.map(item =>
         <li className="nav__submenu-item">
           <a href={item.link}>{item.name}</a>
