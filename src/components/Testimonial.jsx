@@ -16,7 +16,7 @@ export default function Carousel() {
     centerMode: "true",
     centerPadding: 0,
     arrows: false,
-    autoplay: inView,
+    autoplay: true,
     autoplayspeed: 900,
     slidesToShow: 3,
     slidesToScroll: 1,

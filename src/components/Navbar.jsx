@@ -4,8 +4,8 @@ import { GiHamburgerMenu } from "react-icons/gi"
 import { AiOutlineClose } from "react-icons/ai"
 
 const branches = [
-  { name: "Chattrapti Sqaure", link: "/branches/#square" },
-  { name: "Omkar Nagar", link: "/branches/#omkar" },
+  { name: "Chattrapti Sqaure", link: "/branches#square" },
+  { name: "Omkar Nagar", link: "/branches#omkar" },
 ]
 
 const courses = [

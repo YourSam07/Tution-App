@@ -9,7 +9,7 @@ const BranchPage = () => {
       </div>
 
       <div className="flex flex-col mt-16">
-        <div id="square" className="flex flex-col md:flex-row items-center justify-between w-full">
+        <div id="square" className="flex flex-col md:flex-row items-center justify-between w-full h-[90vh]">
           <div className='flex flex-col'>
             <h2 className='font-serif font-extrabold text-[2rem]'>Head Office Address</h2>
             <h4 className='font-sans text-xl'>Chattrapati Sq.,6A, Matruchhaya Modern Society Nagpur</h4>
@@ -21,7 +21,7 @@ const BranchPage = () => {
           </div>
 
         </div>
-        <div id="omkar" className="flex flex-col md:flex-row-reverse my-24 items-center gap-12 w-full">
+        <div id="omkar" className="flex flex-col md:flex-row-reverse my-24 items-center gap-12 w-full h-[90vh]">
           <div className='flex flex-col'>
             <h2 className='font-serif font-extrabold text-[2rem]'>Branch Office Address</h2>
             <h4 className='font-sans text-xl'>Omkar Nagar Near Era International School Residential Campus Nagpur</h4>
