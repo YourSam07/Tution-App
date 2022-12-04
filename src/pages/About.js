@@ -1,7 +1,7 @@
 import React from 'react'
 import "../index.css"
 import Director from "../assets/images/Director.jpg"
-import MDirector from "../assets/images/Managing Director.jpeg"
+import MDirector from "../assets/images/Managing Director.png"
 import teamwork from "../assets/bgs/teamwork1.png"
 import Quotes from "../assets/bgs/quotes.png"
 import woman from "../assets/bgs/woman1.png"
@@ -41,7 +41,7 @@ const About = () => {
         <div ref={ref} className={inView ? "flex justify-center items-center rounded-lg shadow-lg relative bg-gradient-to-tr from-cyan-50 to-cyan-500 h-[400px] w-[400px] aniBox7 md:mb-0 mb-8" : ""}>
           <img src={shiny} alt="shiny" className='absolute -top-3 -right-3 ' />
           <img src={teamwork} alt="teamwork" className='border-8 border-white rounded-full absolute -bottom-16 -left-8 lg:h-44 lg:w-44 sm:h-36 sm:w-36 h-44 w-44' />
-          <img src={woman} alt="about" className='object-contain lg:flex h-[400px] w-[400px]' />
+          <img src={MDirector} alt="about" className='object-contain lg:flex h-[400px] w-[400px]' />
         </div>
       </div>
 

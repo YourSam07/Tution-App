@@ -67,35 +67,35 @@
       "img": "./gallery/Aditi Bondre.png",
       "name": "Aditi Bondre",
       "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro.",
-      "star": 5
+      "selected": "VNIT Nagpur"
     },
     {
       "idx": 2,
       "img": "./gallery/Rohit Rahangdale.png",
       "name": "Rohit Rahangdale",
       "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro.",
-      "star": 5
+      "selected": "N.K.P. Salve Medical College, Nagpur (M.B.B.S.)"
     },
     {
       "idx": 3,
       "img": "./gallery/Vivek Rahangdale.png",
       "name": "Vivek Rahangdale",
       "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro.",
-      "star": 4
+      "selected": "AIIMS Nagpur (M.B.B.S.)"
     },
     {
       "idx": 4,
       "img": "./gallery/Anuj Singh.png",
       "name": "Anuj Singh",
       "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro.",
-      "star": 4
+      "selected": "VNIT Nagpur"
     },
     {
       "idx": 5,
       "img": "./gallery/Avni Ridhorkar.png",
       "name": "Avni Ridhorkar",
       "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, porro.",
-      "star": 5
+      "selected": "NIT Raipur"
     }
   ]
 }

@@ -23,7 +23,7 @@ const WhyComp = () => {
         <img src={arrow} alt="arrow" className='absolute top-0 md:-left-[50%] left-0 rotate-45 scale-150'/>        
         <img src={circle} alt="circle" className='absolute lg:left-[150%] md:left-[110%] scale-90 -z-10'/>        
       </div>
-      <div className='flex flex-col flex-wrap md:flex-row justify-around mx-0 relative'>
+      <div className='flex flex-col flex-wrap md:flex-row justify-around mx-0 relative overflow-hidden'>
         <img src={circle1} alt="circle1" className='absolute top-[90%] left-[20%] -z-10' />
         <img src={circle2} alt="circle2" className='absolute top-[90%] left-[75%] -z-10' />
         <div ref={ref} className={inView ? "bg-white rounded-md shadow-lg p-8 w-80 flex flex-col gap-2 m-4  aniBox1" : "opacity-0"}>

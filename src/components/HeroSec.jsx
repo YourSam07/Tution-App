@@ -1,4 +1,5 @@
 import React from 'react'
+import data from "../assets/data.json"
 import one from "../assets/images/t12.png"    
 import two from "../assets/images/t10.png"
 import three from "../assets/images/t11.png"
@@ -20,25 +21,25 @@ const HeroSec = () => {
         <p ref={ref} className={inView ? 'font-serif lg:text-xl mb-2 aniD2' : "opacity-0"}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, placeat.</p>
         <button ref={ref} className={inView ? 'py-3 mx-0 font-bold font-sans lg:text-xl md:text-lg rounded-3xl shadow-lg lg:w-[25%] md:w-[40%] sm:w-[30%] w-[35%] mt-4 bg-[#fed05b] hover:bg-[#fed0cb] hover:cursor-pointer aniD2' : "opacity-0"}>Know More</button>
       </div>
-      <div className='bg-yellow flex flex-col justify-center md:items-end items-center gap-3'>
+      <div ref={ref} className={inView ? 'flex flex-col justify-center md:items-end items-center gap-3 aniBox7' : "opacity-0"}>
         <div className='flex gap-3 relative'>
           <div className="grid place-items-center bg-[#93d5eb] rounded-full overflow-hidden  shadow-lg">
             <div className='bg-[#ffa9cb] h-8 w-8 rounded-full absolute top-[80%] -left-[5%]'></div>
-            <img src={one} alt="" className='xl:h-48 xl:w-48 lg:h-40 lg:w-40 md:h-24 md:w-24 sm:h-48 sm:w-48 h-32 w-32' />
+            <img src={data.details[0].img} alt="" className='xl:h-48 xl:w-48 lg:h-40 lg:w-40 md:h-24 md:w-24 sm:h-48 sm:w-48 h-32 w-32' />
             <div className='bg-[#f1c05e] h-5 w-5 rounded-full absolute top-[5%] left-[45%] -z-10'></div>
           </div>
           <div className="grid place-items-center bg-[#ffa8ca] rounded-lg overflow-hidden shadow-lg">
-            <img src={two} alt="" className='xl:h-48 xl:w-48 lg:h-40 lg:w-40 md:h-24 md:w-24 sm:h-48 sm:w-48 h-32 w-32' />
+            <img src={data.details[1].img} alt="" className='xl:h-48 xl:w-48 lg:h-40 lg:w-40 md:h-24 md:w-24 sm:h-48 sm:w-48 h-32 w-32' />
             <div className='bg-[#fed05b] xl:h-40 xl:w-40 lg:h-32 lg:w-32 md:h-24 md:w-24 h-24 w-24 rounded-full absolute -top-[15%] left-[72%] -z-10'></div>
           </div>
         </div>
         <div className="flex gap-3 relative">
           <div className="grid place-items-center bg-[#f5c362] rounded-lg overflow-hidden shadow-lg">
-            <img src={three} alt="" className='xl:h-48 xl:w-48 lg:h-40 lg:w-40 md:h-24 md:w-24 sm:h-48 sm:w-48 h-32 w-32 ' />
+            <img src={data.details[2].img} alt="" className='xl:h-48 xl:w-48 lg:h-40 lg:w-40 md:h-24 md:w-24 sm:h-48 sm:w-48 h-32 w-32 ' />
             <div className='bg-[#61b4d0] h-6 w-6 rounded-full absolute top-[80%] -left-[10%] -z-10'></div>
           </div>
           <div className="grid place-items-center bg-[#e4e3e5] rounded-tr-full rounded-br-full overflow-hidden shadow-lg">
-            <img src={four} alt="" className='xl:h-48 xl:w-48 lg:h-40 lg:w-40 md:h-24 md:w-24 sm:h-48 sm:w-48 h-32 w-32' />
+            <img src={data.details[3].img} alt="" className='xl:h-48 xl:w-48 lg:h-40 lg:w-40 md:h-24 md:w-24 sm:h-48 sm:w-48 h-32 w-32' />
             <div className='bg-[#ffa8ca] h-8 w-8 rounded-full absolute top-[65%] -right-[5%] -z-10'></div>
           </div>
         </div>

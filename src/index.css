@@ -126,31 +126,38 @@
 
 .ani {
   animation: fadeIn 5s ease;
+  transition: opacity 5s ease;
 }
 
 .aniD1{
   animation: fadeIn 3s ease 0.5s;
+  transition: opacity 5s ease;
 }
 
 .aniD2{
   animation: fadeIn 3s ease 1s;
+  transition: opacity 5s ease;
 }
 
 .aniBox1{
   animation: box 2s ease;
+  transition: opacity 5s ease;
 }
 
 .aniBox2{
   animation: box 2s ease;
   animation-delay: 200ms;
+  transition: opacity 5s ease;
 }
 .aniBox3{
   animation: box 2s ease;
   animation-delay: 400ms;
+  transition: opacity 5s ease;
 }
 .aniBox4{
   animation: box 2s ease;
   animation-delay: 600ms;
+  transition: opacity 5s ease;
 }.aniBox5{
   animation: box 2s ease;
   animation-delay: 800ms;

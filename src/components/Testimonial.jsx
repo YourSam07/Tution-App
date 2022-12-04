@@ -61,9 +61,7 @@ export default function Carousel() {
               </div>
               <h1 className={index === dataIndex ? "font-bold font-serif text-2xl mb-2" : "hidden"}>{item.name}</h1>
               <div className={index === dataIndex ? "flex gap-2" : "hidden"}>
-                {[...Array(item.star)].map((item, index) => {
-                  return (<FaStar key={index} fill='#fed15a' size={24} />)
-                })}
+                {item.selected}
               </div>
               <div className={index === dataIndex ? "text-center mt-4 text-[1.5rem] relative mb-8" : "hidden"}>
                 <span className='absolute -top-[75%] left-0 opacity-10'><img src={Quotes} alt="quotes" className='h-32 w-32'/></span>
