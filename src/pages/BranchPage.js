@@ -1,5 +1,5 @@
 import React from 'react'
-import { useInView } from 'react'
+import { useInView } from 'react-intersection-observer'
 const BranchPage = () => {
   const { ref, inView} = useInView({
     threshold: 0,
