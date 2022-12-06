@@ -15,9 +15,9 @@ const Courses = () => {
     triggerOnce: true
   })
   return (
-    <div className='text-center lg:px-12 my-10 relative '>
+    <div className='text-center lg:px-12 mb-10 relative'>
       <img src={circle3} alt="circle3" className='absolute left-[37%] top-[50%] -z-10'/>
-      <h1 ref={ref} className={inView ? "font-bold text-3xl font-serif mb-8 ani" : "opacity-0"}>Courses Taught</h1>
+      <h1 ref={ref} className={inView ? "font-bold md:text-[2.5rem] text-3xl font-serif mb-8 ani" : "opacity-0"}>Courses Taught</h1>
       <div className="flex flex-wrap gap-12 justify-center items-center md:items-end">
         <div ref={ref} className={inView ? "p-4 px-16 bg-white rounded-md shadow-lg grid place-items-center aniBox1" : "opacity-0"}>
           <img src={ntse} alt="" className=''/>

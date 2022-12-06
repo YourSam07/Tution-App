@@ -8,25 +8,25 @@ const branches = [
   { name: "Omkar Nagar", link: "/branches#omkar" },
 ]
 
-const courses = [
-  { name: "NEET", link: "/" },
-  { name: "IIT JEE", link: "/" },
-  { name: "MHT CET", link: "/" },
-  { name: "NDA", link: "/" },
-  { name: "NTSE", link: "/" },
-  { name: "KVPY", link: "/" },
-  { name: "VITEE", link: "/" },
-]
+// const courses = [
+//   { name: "NEET", link: "/" },
+//   { name: "IIT JEE", link: "/" },
+//   { name: "MHT CET", link: "/" },
+//   { name: "NDA", link: "/" },
+//   { name: "NTSE", link: "/" },
+//   { name: "KVPY", link: "/" },
+//   { name: "VITEE", link: "/" },
+// ]
 
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const [branchClicked, setBranchClicked] = useState(false)
-  const [coursesClicked, setCoursesClicked] = useState(false)
+  // const [coursesClicked, setCoursesClicked] = useState(false)
   const closeMobileMenu = () => {
     setMenuOpen(!menuOpen)
     setBranchClicked(false)
-    setCoursesClicked(false)
+    // setCoursesClicked(false)
   }
   console.log(menuOpen)
   return (
@@ -62,9 +62,12 @@ const Navbar = () => {
               : null}
           </li>
           <li className="nav__menu-item">
-            <a href="/gallery">Gallery</a>
+            <a href="/vrtour">Virtual Tour</a>
           </li>
           <li className="nav__menu-item">
+            <a href="/gallery">Gallery</a>
+          </li>
+          {/* <li className="nav__menu-item">
             <a href="/" onClick={() => setCoursesClicked(!coursesClicked)}>Courses</a>
             {coursesClicked ?
               <ul className="mobile__submenu">
@@ -73,7 +76,7 @@ const Navbar = () => {
                 </li>))}
               </ul>
               : null}
-          </li>
+          </li> */}
           <li className="nav__menu-item">
             <a href="/contact">Contact</a>
           </li>
@@ -101,9 +104,12 @@ const Navbar = () => {
           <a href="/gallery">Gallery</a>
         </li>
         <li className="nav__menu-item">
+        <a href="/vrtour">Virtual Tour</a>
+        </li>
+        {/* <li className="nav__menu-item">
           <a href="/">Courses</a>
           <Submenu arr={courses} />
-        </li>
+        </li> */}
         <li className="nav__menu-item">
           <a href="/contact">Contact</a>
         </li>

@@ -97,5 +97,36 @@
       "content": "With Gravity, I reached where I am today. Thanks MR. ABhinav for guiding me throughout my journey.",
       "selected": "NIT Raipur"
     }
-  ]
+  ],
+  "vrImages": {
+    "buildingView": [
+      "./360imgs/building view/R0010370_20221116130236.jpg"
+    ],
+    "classroom": [
+      "./360imgs/class room/R0010359_20221116122951.jpg",
+      "./360imgs/class room/R0010360_20221116123142.jpg"
+    ],
+    "hostel": [
+      "./360imgs/hostel/1.jpg",
+      "./360imgs/hostel/2.jpg",
+      "./360imgs/hostel/R0010373_20221116131255.jpg",
+      "./360imgs/hostel/R0010374_20221116131429.jpg",
+      "./360imgs/hostel/R0010375_20221116133943.jpg",
+      "./360imgs/hostel/R0010376_20221116134044.jpg",
+      "./360imgs/hostel/R0010377_20221116134115.jpg",
+      "./360imgs/hostel/R0010378_20221116134155.jpg",
+      "./360imgs/hostel/R0010379_20221116134613.jpg"
+    ],
+    "library": [
+      ".360imgs/library/R0010363_20221116123820.jpg"
+    ],
+    "mess": [
+      ".360imgs/mess/R0010371_20221116130910.jpg",
+      ".360imgs/mess/R0010372_20221116131002.jpg"
+    ],
+    "reception": [
+      "./360imgs/reception/R0010362_20221116123415.jpg",
+      "./360imgs/reception/R0010369_20221116125626.jpg"
+    ]
+  }
 }
