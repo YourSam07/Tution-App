@@ -1,13 +1,18 @@
 import React from 'react'
 import { AiFillHome, AiFillPhone, AiTwotoneMail } from "react-icons/ai"
+import { useInView } from 'react-intersection-observer'
 
 const ContactLeftSide = () => {
+  const {ref, inView} = useInView({
+    threshold: 0,
+    triggerOnce: true
+  })
   return (
     <div className='flex flex-col p-4 contactBg2'>
-      <div className="font-bold font-serif text-2xl text-center md:text-left md:pl-12 lg:text-3xl lg:pl-28">We're here for you</div>
+      <div ref={ref} className={inView ? "font-bold font-serif text-2xl text-center md:text-left md:pl-12 lg:text-3xl lg:pl-28 ani" : "opacity-0"}>We're here for you</div>
       <div className="flex flex-col md:flex-row md:gap-4 lg:p-12 lg:gap-8 mb-8"> 
         <div className="left flex flex-col md:w-1/2">
-          <div className="flex-col mt-4 text-black px-6 py-4 rounded-md shadow-lg bg-white">
+          <div ref={ref} className={inView ? "flex-col mt-4 text-black px-6 py-4 rounded-md shadow-lg bg-white aniBox1" : "opacity-0"}>
             <div className="flex items-center">
               <div className="border-[0.2rem] border-black p-1">
                 <AiFillHome size={24} />
@@ -19,7 +24,7 @@ const ContactLeftSide = () => {
             </div>
             <p className='text-[0.9rem]'>Chattrapati Sq.,6A, Matruchhaya Modern Society Nagpur</p>
           </div>
-          <div className="flex-col mt-8 text-black px-6 py-4 rounded-md shadow-lg bg-white">
+          <div ref={ref} className={inView ? "flex-col mt-8 text-black px-6 py-4 rounded-md shadow-lg bg-white aniBox1" :  "opacity-0"}>
             <div className="flex items-center">
               <div className="border-[0.2rem] border-black p-1">
                 <AiFillHome size={24} />
@@ -33,7 +38,7 @@ const ContactLeftSide = () => {
           </div>
         </div>
         <div className="right flex flex-col md:w-1/2 md:-mt-12">
-          <div className="flex-col mt-4 text-black px-6 py-4 rounded-md shadow-lg bg-white">
+          <div ref={ref} className={inView ? "flex-col mt-4 text-black px-6 py-4 rounded-md shadow-lg bg-white aniBox7" : "opacity-0"}>
             <div className="flex items-center">
               <div className="border-[0.2rem] border-black p-1">
                 <AiFillPhone size={24} />
@@ -45,7 +50,7 @@ const ContactLeftSide = () => {
             </div>
             <p className='text-[0.9rem]'>+91 8668631102, +91 8855973492, +91 8668376653</p>
           </div>
-          <div className="flex-col mt-8 text-black px-6 py-4 rounded-md shadow-lg bg-white">
+          <div ref={ref} className={inView ? "flex-col mt-8 text-black px-6 py-4 rounded-md shadow-lg bg-white aniBox7" : "opacity-0"}>
             <div className="flex items-center">
               <div className="border-[0.2rem] border-black p-1">
                 <AiTwotoneMail size={24} />

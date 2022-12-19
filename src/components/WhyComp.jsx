@@ -21,7 +21,7 @@ const WhyComp = () => {
         <p className='md:text-2xl text-xl font-serif'>Why choose</p>
         <h1 className='md:text-[2.5rem] text-3xl font-bold font-serif'>The Gravity Academy?</h1>
         <img src={arrow} alt="arrow" className='absolute top-0 md:-left-[50%] left-0 rotate-45 scale-150 hidden sm:block'/>        
-        <img src={circle} alt="circle" className='absolute lg:left-[150%] md:left-[110%] scale-90'/>        
+        <img src={circle} alt="circle" className='absolute lg:left-[140%] md:left-[110%] scale-90'/>        
       </div>
       <div className='pb-12 flex flex-col flex-wrap md:flex-row justify-around mx-0 relative overflow-hidden'>
         <img src={circle1} alt="circle1" className='absolute top-[75%] left-[20%]' />

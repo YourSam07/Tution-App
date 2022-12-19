@@ -8,12 +8,13 @@ import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import BranchPage from './pages/BranchPage';
 import VirtualTour from './pages/VirtualTour';
+import Why from './pages/Why';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Toaster />
+        {/* <Toaster /> */}
         <Navbar />
         <Routes>
           <Route path="/" exact element={<Home/>} />
@@ -21,6 +22,7 @@ function App() {
           <Route path="/gallery" element={<Gallery/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/branches" element={<BranchPage />} />
+          <Route path="/why" element={<Why />} />
           <Route path="/vrtour" element ={<VirtualTour />} />
         </Routes>
         <Footer />

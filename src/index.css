@@ -93,10 +93,31 @@
   background-size: cover;
 } */
 
+.hoverEffect{
+  color: black;
+  transition: all 1s;
+}
+
+.heroBg{
+  background: url("./assets/bgs/herobg.png") no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 95vh;
+}
+
+.whyBg{
+  background: url("./assets/bgs/doodlebg1.png") no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
 
 .contactBg2 {
   background: url("./assets/bgs/Colored\ Patterns.svg") no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .about {
@@ -117,11 +138,6 @@
 .coursebg {
   background: url("./assets/bgs/some.png") no-repeat;
   background-size: contain;
-}
-
-.branchBg{
-  background: url("./assets/bgs/worldmap.png") no-repeat;
-  background-size: cover;
 }
 
 .ani {
@@ -167,18 +183,18 @@
   transition: opacity 5s ease;
   animation-delay: 1000ms;
 }
-
 .aniBox7{
   animation: box2 2s ease;
+  transition: opacity 2s ease;
 }
 
 @keyframes box {
-  0% { transform: translateX(-100%);}
+  0% { transform: translateX(-100vw);}
   100% {transform: translateX(0%);}
 }
 
 @keyframes box2{
-  0% {transform: translateX(100%)}
+  0% {transform: translateX(100vw)}
   100% {transform: translateX(0%)}
 }
 
@@ -192,7 +208,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1002px) {
   .nav__menu {
     display: none;
   }
