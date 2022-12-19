@@ -61,6 +61,7 @@
     "img59": "/gal26@.jpg",
     "img60": "/labbb.jpg"
   },
+
   "details": [
     {
       "idx": 1,
@@ -98,6 +99,7 @@
       "selected": "NIT Raipur"
     }
   ],
+
   "vrImages": {
     "building": [
       "https://momento360.com/e/u/c2e6a5fb949346f4987d049c1c442116?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true"
@@ -120,10 +122,15 @@
       "https://momento360.com/e/u/1a9d7dc6ac194156b55d0fabf8578fc2?utm_campaign=embed&utm_source=other&heading=-148.92&pitch=-16.9&field-of-view=75&size=medium&display-plan=true"
     ],
     "reception": [
-      "https://momento360.com/e/u/d5590f324ed14e3fa90fc92e6c3d36fa?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true"
+      "https://momento360.com/e/u/9ce79761cc9947da8fdafdece9251c71?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true"
     ],
     "director": [
-      "https://momento360.com/e/u/d5590f324ed14e3fa90fc92e6c3d36fa?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true"
+      "https://momento360.com/e/u/3f791e057c8a4f50a9fd16665697f837?utm_campaign=embed&utm_source=other&heading=-195.09&pitch=-5.27&field-of-view=75&size=medium&display-plan=true"
     ]
+  },
+
+  "brochures": {
+    "firstpage": "/Frontpage.jpg",
+    "backpage": "/BackPage.jpg"
   }
 }

@@ -38,10 +38,10 @@ const VirtualTour = () => {
   }
 
   return (
-    <div className="mt-20 min-h-[89.5vh] relative">
+    <div className="mt-20 min-h-[89.5vh] relative whypadding">
       <div className="absolute top-0 left-0 h-full w-full">
         <iframe title='vr' src={currImg} height="98%" width="100%" frameborder="0"></iframe>
-        <div className="menu fixed left-10 top-[15vh] bg-white shadow-3xl rounded-lg overflow-hidden">
+        <div className="menu fixed left-10 top-[15vh] bg-white shadow-3xl rounded-lg overflow-hidden whypadding">
           <div className="flex items-center justify-between p-4 gap-8">
             <span className='text-xl font-bold'>Views</span>
             <span className='cursor-pointer' onClick={() => { setViewOpen(!viewOpen) }}>
@@ -71,13 +71,13 @@ const VirtualTour = () => {
               Hostel
             </li>
             {subMenu[1].open ?
-              <ul className='px-6 bg-slate-200'>
-                <li onClick={() => setCurrImg(data.vrImages.hostel[0])} className='cursor-pointer'>View 1</li>
-                <li onClick={() => setCurrImg(data.vrImages.hostel[1])} className='cursor-pointer'>View 2</li>
-                <li onClick={() => setCurrImg(data.vrImages.hostel[2])} className='cursor-pointer'>View 3</li>
-                <li onClick={() => setCurrImg(data.vrImages.hostel[3])} className='cursor-pointer'>View 4</li>
-                <li onClick={() => setCurrImg(data.vrImages.hostel[4])} className='cursor-pointer'>View 5</li>
-                <li onClick={() => setCurrImg(data.vrImages.hostel[5])} className='cursor-pointer'>View 6</li>
+              <ul className='bg-slate-200'>
+                <li onClick={() => setCurrImg(data.vrImages.hostel[0])} className='cursor-pointer hover:bg-black hover:text-white px-6'>View 1</li>
+                <li onClick={() => setCurrImg(data.vrImages.hostel[1])} className='cursor-pointer hover:bg-black hover:text-white px-6'>View 2</li>
+                <li onClick={() => setCurrImg(data.vrImages.hostel[2])} className='cursor-pointer hover:bg-black hover:text-white px-6'>View 3</li>
+                <li onClick={() => setCurrImg(data.vrImages.hostel[3])} className='cursor-pointer hover:bg-black hover:text-white px-6'>View 4</li>
+                <li onClick={() => setCurrImg(data.vrImages.hostel[4])} className='cursor-pointer hover:bg-black hover:text-white px-6'>View 5</li>
+                <li onClick={() => setCurrImg(data.vrImages.hostel[5])} className='cursor-pointer hover:bg-black hover:text-white px-6'>View 6</li>
                 {/* <li onClick={() => setCurrImg(data.vrImages.hostel[6])} className='cursor-pointer'>View 7</li> */}
                 {/* <li onClick={() => setCurrImg(data.vrImages.hostel[7])} className='cursor-pointer'>View 8</li> */}
                 {/* <li onClick={() => setCurrImg(data.vrImages.hostel[8])} className='cursor-pointer'>View 9</li> */}

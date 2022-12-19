@@ -9,6 +9,7 @@ const NewHero = () => {
     {      title: "About", active: false, href: "/about"     },
     {      title: "Why Gravity Academy", active: false, href: "/why"     },
     {      title: "Branches", active: false, href: "/branches"     },
+    {      title: "Our Stars", active: false, href: "/stars"     },
     {      title: "Gallery", active: false, href: "/gallery"     },
     {      title: "Virtual Tour", active: false, href: "/vrtour"     },
     {      title: "Contact Us", active: false, href: "/contact"     }
@@ -29,7 +30,7 @@ const NewHero = () => {
   }
   return (
     <div className='heroBg'>
-      <button className="fixed top-[45%] -right-[102px] bg-[#d9704a] text-white -rotate-90 px-8 py-2 z-50">Admission Enquiry Form</button  >
+      {/* <button className="fixed top-[45%] -right-[102px] bg-[#d9704a] text-white -rotate-90 px-8 py-2 z-50">Admission Enquiry Form</button  > */}
       <div className="flex-col flex lg:pt-40 lg:pl-40 pt-20 pb-10 items-center md:items-start md:pl-20">
         <div className="flex flex-col md:flex-row gap-8 ">
           <div className="logo">

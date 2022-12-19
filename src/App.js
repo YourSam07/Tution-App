@@ -2,19 +2,18 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Home from "./pages/Home"
 import Navbar from "./components/Navbar"
 import About from './pages/About';
-import Toaster from './components/Toaster';
 import Footer from './components/Footer'
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import BranchPage from './pages/BranchPage';
 import VirtualTour from './pages/VirtualTour';
 import Why from './pages/Why';
+import OurStars from './pages/OurStars';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        {/* <Toaster /> */}
         <Navbar />
         <Routes>
           <Route path="/" exact element={<Home/>} />
@@ -24,6 +23,7 @@ function App() {
           <Route path="/branches" element={<BranchPage />} />
           <Route path="/why" element={<Why />} />
           <Route path="/vrtour" element ={<VirtualTour />} />
+          <Route path="/stars" element ={<OurStars />} />
         </Routes>
         <Footer />
       </Router>

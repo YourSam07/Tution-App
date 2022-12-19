@@ -25,7 +25,7 @@ const Navbar = () => {
       window.scrollY > 500 ? setShowNav(true) : setShowNav(false)
     } else {
       setShowNav(true)
-    }    
+    }
   }
   console.log(showNav)
   useEffect(() => {
@@ -63,7 +63,7 @@ const Navbar = () => {
               <a href="/why">Why gravity Academy</a>
             </li>
             <li className="nav__menu-item">
-              <a href="/" onClick={() => setBranchClicked(!branchClicked)}>Branches</a>
+              <a href="/branches" onClick={() => setBranchClicked(!branchClicked)}>Branches</a>
               {branchClicked ?
                 <ul className="mobile__submenu">
                   {(branches.map(item => <li>
@@ -71,6 +71,9 @@ const Navbar = () => {
                   </li>))}
                 </ul>
                 : null}
+            </li>
+            <li className="nav__menu-item">
+              <a href="/stars">Our Stars</a>
             </li>
             <li className="nav__menu-item">
               <a href="/vrtour">Virtual Tour</a>
@@ -95,7 +98,7 @@ const Navbar = () => {
           : null}
 
         {/* Desktop View  */}
-        <ul className="nav__menu flex items-center">
+        <ul className="nav__menu flex items-center flex-wrap">
           <li className="nav__menu-item">
             <a href="/">Home</a>
           </li>
@@ -110,6 +113,9 @@ const Navbar = () => {
           <li className="nav__menu-item">
             <a href="/branches">Branches</a>
             <Submenu arr={branches} />
+          </li>
+          <li className="nav__menu-item">
+            <a href="/stars">Our Stars</a>
           </li>
           <li className="nav__menu-item">
             <a href="/gallery">Gallery</a>

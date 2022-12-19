@@ -118,6 +118,7 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  /* background-color:rgb(255, 238, 238); */
 }
 
 .about {
@@ -188,6 +189,10 @@
   transition: opacity 2s ease;
 }
 
+.trans{
+  transition: all 0.5s ease;
+}
+
 @keyframes box {
   0% { transform: translateX(-100vw);}
   100% {transform: translateX(0%);}
@@ -208,7 +213,7 @@
   }
 }
 
-@media only screen and (max-width: 1002px) {
+@media only screen and (max-width: 768px) {
   .nav__menu {
     display: none;
   }
@@ -233,6 +238,7 @@
     animation: slideLeft 1s ease;
     animation-fill-mode: forwards;
     font-size: 1.1rem;
+    padding-top: 1rem;
   }
 
   .slide__menu > li > a {
@@ -259,5 +265,11 @@
     to {
       right: 0%
     }
+  }
+}
+
+@media only screen and (min-width: 770px) and (max-width: 1121px){
+  .whypadding{
+    margin-top: 10rem;
   }
 }

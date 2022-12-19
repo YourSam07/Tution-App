@@ -4,7 +4,7 @@ import ContactRIdeSide from '../components/ContactRIdeSide'
 
 const Contact = () => {
   return (
-    <div className="mt-20 flex flex-col">
+    <div className="mt-20 flex flex-col whypadding">
       <ContactRIdeSide />
       <ContactLeftSide />
     </div>

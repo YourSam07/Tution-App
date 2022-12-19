@@ -4,7 +4,7 @@ import data from "../assets/data.json"
 const Gallery = () => {
   console.log(data)
   return (
-    <div className='p-6 mt-20'>
+    <div className='p-6 mt-20 whypadding'>
       <div className="font-sans font-bold text-3xl text-amber-400 m-4">Gallery</div>
       <div className="gallery columns-1 md:columns-2 lg:columns-3 xl:coulmns-4">
         {Object.entries(data.gallery).map(([key, value]) => {
