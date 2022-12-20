@@ -99,7 +99,7 @@
 }
 
 .heroBg{
-  background: url("./assets/bgs/herobg.png") no-repeat;
+  background: url("./assets/bgs/newhero.jpg") no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -142,51 +142,51 @@
 }
 
 .ani {
-  animation: fadeIn 5s ease;
-  transition: opacity 5s ease;
+  animation: fadeIn 2s ease;
+  transition: opacity 1s ease;
 }
 
 .aniD1{
-  animation: fadeIn 3s ease 0.5s;
-  transition: opacity 5s ease;
+  animation: fadeIn 2s ease 0.5s;
+  transition: opacity 1s ease;
 }
 
 .aniD2{
-  animation: fadeIn 3s ease 1s;
-  transition: opacity 5s ease;
+  animation: fadeIn 2s ease 1s;
+  transition: opacity 1s ease;
 }
 
 .aniBox1{
   animation: box 2s ease;
-  transition: opacity 5s ease;
+  transition: opacity 1s ease;
 }
 
 .aniBox2{
   animation: box 2s ease;
-  animation-delay: 200ms;
-  transition: opacity 5s ease;
+  animation-delay: 100ms;
+  transition: opacity 1s ease;
 }
 .aniBox3{
   animation: box 2s ease;
-  animation-delay: 400ms;
-  transition: opacity 5s ease;
+  animation-delay: 200ms;
+  transition: opacity 1s ease;
 }
 .aniBox4{
   animation: box 2s ease;
-  animation-delay: 600ms;
-  transition: opacity 5s ease;
+  animation-delay: 300ms;
+  transition: opacity 1s ease;
 }.aniBox5{
   animation: box 2s ease;
-  transition: opacity 5s ease;
-  animation-delay: 800ms;
+  transition: opacity 1s ease;
+  animation-delay: 400ms;
 }.aniBox6{
   animation: box 2s ease;
-  transition: opacity 5s ease;
-  animation-delay: 1000ms;
+  transition: opacity 1s ease;
+  animation-delay: 500ms;
 }
 .aniBox7{
   animation: box2 2s ease;
-  transition: opacity 2s ease;
+  transition: opacity 1s ease;
 }
 
 .trans{
@@ -214,6 +214,14 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .heroBg{
+    background: url("./assets/bgs/mobileBg.png") no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 95vh;
+  }
+
   .nav__menu {
     display: none;
   }

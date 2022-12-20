@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../assets/logos/gl3.png'
-import temp from '../assets/images/banner.jpeg'
+import temp from '../assets/bgs/adopen.png'
 import { useState } from 'react'
 
 const NewHero = () => {
@@ -50,12 +50,13 @@ const NewHero = () => {
         <div className="flex flex-col md:flex-row mt-8 gap-4 items-center px-6 sm:px-4 md:p-0 md:pr-8">
           <div className="bulletin bg-[#f36a33] p-8 sm:w-1/2 lg:w-[40%] text-white">
             <h2 className='mb-4'>Gravity Academy Bulletin</h2>
-            <marquee behavior="scroll" direction="up" height="175" scrollamount="4">
-              <p className='pb-4 border-b-2 border-white mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus, fuga doloremque possimus aperiam voluptates?</p>
-              <p className='pb-4 border-b-2 border-white mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus, fuga doloremque possimus aperiam voluptates?</p>
-              <p className='pb-4 border-b-2 border-white mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus, fuga doloremque possimus aperiam voluptates?</p>
-              <p className='pb-4 border-b-2 border-white mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus, fuga doloremque possimus aperiam voluptates?</p>
-              <p className='pb-4 border-b-2 border-white mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus, fuga doloremque possimus aperiam voluptates?</p>
+            <marquee behavior="scroll" direction="up" height="175" scrollamount="3">
+              <p className='pb-4 border-b-2 border-white mt-4'>The Gravity Academy started with amazing results in Medical as well as Engineering Field.</p>
+              <p className='pb-4 border-b-2 border-white mt-4'>Vivek Santosh Rahangdale got selected in AIIMS Nagpur, which is the an All India Top Rank College in 1st attempt.</p>
+              <p className='pb-4 border-b-2 border-white mt-4'>Avani Ridhorkar got into NIT Raipur. Other students also bagged top admits from colleges like VNIT Nagpur, COEP pune, VIT Pune etc.</p>
+              <p className='pb-4 border-b-2 border-white mt-4'>Rohit Rahangdale, with his arduous efforts was admitted to N.K.P. Salve Medical College, Nagpur for M.B.B.S.</p>
+              <p className='pb-4 border-b-2 border-white mt-4'>Students did well in not only engineering exams but also medical exams as two of them got into B.A.M.S.</p>
+              <p className='pb-4 border-b-2 border-white mt-4'>Disha A. Damahe and Neddhi R Kamthe got into VSMP'S Dental College Nagpur B.D.S and S.D.K.S Dental College Nagpur B.D.S respectively. </p>
             </marquee>
           </div>
           <div className="entrance grid place-items-center sm:block sm:w-1/2 lg:w-[40%]">
