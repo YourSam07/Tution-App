@@ -1,18 +1,24 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Logo from '../assets/logos/gl3.png'
 import temp from '../assets/bgs/adopen.png'
 import { useState } from 'react'
+import popup from '../assets/bgs/popup.jpg'
+import emailjs from '@emailjs/browser'
+import data from "../assets/data.json"
+import { toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 const NewHero = () => {
-  const [menuData, setMenuData] = useState( [
-    {      title: "Home", active: false, href: "/"     },
-    {      title: "About", active: false, href: "/about"     },
-    {      title: "Why Gravity Academy", active: false, href: "/why"     },
-    {      title: "Branches", active: false, href: "/branches"     },
-    {      title: "Our Stars", active: false, href: "/stars"     },
-    {      title: "Gallery", active: false, href: "/gallery"     },
-    {      title: "Virtual Tour", active: false, href: "/vrtour"     },
-    {      title: "Contact Us", active: false, href: "/contact"     }
+  const [openPopUp, setOpenPopUp] = useState(false)
+  const [menuData, setMenuData] = useState([
+    { title: "Home", active: false, href: "/" },
+    { title: "About", active: false, href: "/about" },
+    { title: "Why Gravity Academy", active: false, href: "/why" },
+    { title: "Branches", active: false, href: "/branches" },
+    { title: "Our Stars", active: false, href: "/stars" },
+    { title: "Gallery", active: false, href: "/gallery" },
+    { title: "Virtual Tour", active: false, href: "/vrtour" },
+    { title: "Contact Us", active: false, href: "/contact" }
   ])
 
   const activeHover = (i) => {
@@ -28,9 +34,30 @@ const NewHero = () => {
     }))
     console.log(menuData)
   }
+
+  const handlePopUp = () => {
+    setOpenPopUp(true)
+  }
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_1gz943y', 'template_axcx379', form.current, 'I0S-n2IixOFBjSbR6')
+      .then((result) => {
+        console.log(result);
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
+  const notify = () => {
+    toast.success("Brochure Successfully Downloaded")
+  }
+
   return (
-    <div className='heroBg'>
-      {/* <button className="fixed top-[45%] -right-[102px] bg-[#d9704a] text-white -rotate-90 px-8 py-2 z-50">Admission Enquiry Form</button  > */}
+    <div className='heroBg relative'>
+      <button className="fixed top-[45%] -right-[102px] bg-[#d9704a] text-white -rotate-90 px-8 py-2 z-50" onClick={() => handlePopUp()}>Admission Enquiry Form</button  >
       <div className="flex-col flex lg:pt-40 lg:pl-40 pt-20 pb-10 items-center md:items-start md:pl-20">
         <div className="flex flex-col md:flex-row gap-8 ">
           <div className="logo">
@@ -60,10 +87,29 @@ const NewHero = () => {
             </marquee>
           </div>
           <div className="entrance grid place-items-center sm:block sm:w-1/2 lg:w-[40%]">
-            <img src={temp} alt="" className=''/>
+            <a href={data.brochures.pdf} download onClick={() => notify()}>
+              <img src={temp} alt="" className='' />
+            </a>
           </div>
         </div>
       </div>
+      {openPopUp ?
+        <div className=''>
+          <div className="bg-black absolute top-0 left-0 opacity-70 h-[100vh] w-full" onClick={() => setOpenPopUp(false)}></div>
+          <div className="flex flex-col justify-center z-50 top-[2%] left-0 lg:translate-x-full sm:translate-x-1/2 translate-x-[18%] absolute p-8 bg-white rounded-lg shadow-lg md:w-1/3 sm:w-1/2 w-3/4">
+            <div>
+              <img src={popup} alt="" />
+            </div>
+            <form action="" className='flex flex-col justify-center mt-4' ref={form} onSubmit={sendEmail}>
+              <input type="text" name="from_name" id="" placeholder='Enter your name' className='px-6 py-2 w-[100%] border-b-4 border-[#ffa0a3] focus:outline-none focus:border-2 focus:border-[#ffa0a3] focus:border-b-4' />
+              <input type="text" name="from_email" id="" placeholder='Enter Email Addresss' className='px-6 py-2 mt-6 w-[100%] border-b-4 border-[#ffa0a3] focus:outline-none focus:border-2 focus:border-[#ffa0a3] focus:border-b-4' />
+              <input type="text" name="subject" id="" placeholder='Enter Subject' className='px-6 py-2 mt-6 w-[100%]  border-b-4 border-[#ffa0a3] focus:outline-none focus:border-2 focus:border-[#ffa0a3] focus:border-b-4' />
+              <textarea name="message" id="" cols="30" rows="4" placeholder='Enter Message' className='px-6 py-2 mt-6 w-[100%] border-b-4 border-[#ffa0a3] focus:outline-none focus:border-2 focus:border-[#ffa0a3] focus:border-b-4' spellCheck="false" />
+              <button type="submit" className='px-6 py-2 mt-4 bg-[#f55c61] shadow-md rounded-sm hover:bg-[#ff8e92]'>Send Message</button>
+            </form>
+          </div>
+        </div>
+        : null}
     </div>
   )
 }

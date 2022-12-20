@@ -93,12 +93,12 @@
   background-size: cover;
 } */
 
-.hoverEffect{
+.hoverEffect {
   color: black;
   transition: all 1s;
 }
 
-.heroBg{
+.heroBg {
   background: url("./assets/bgs/newhero.jpg") no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -106,7 +106,7 @@
   min-height: 95vh;
 }
 
-.whyBg{
+.whyBg {
   background: url("./assets/bgs/doodlebg1.png") no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -146,61 +146,164 @@
   transition: opacity 1s ease;
 }
 
-.aniD1{
+.aniD1 {
   animation: fadeIn 1s ease 0.5s;
   transition: opacity 1s ease;
 }
 
-.aniD2{
+.aniD2 {
   animation: fadeIn 1s ease 1s;
   transition: opacity 1s ease;
 }
 
-.aniBox1{
+.aniBox1 {
   animation: box 1s ease;
   transition: opacity 1s ease;
 }
 
-.aniBox2{
+.aniBox2 {
   animation: box 1s ease;
   animation-delay: 100ms;
   transition: opacity 1s ease;
 }
-.aniBox3{
+
+.aniBox3 {
   animation: box 1s ease;
   animation-delay: 200ms;
   transition: opacity 1s ease;
 }
-.aniBox4{
+
+.aniBox4 {
   animation: box 1s ease;
   animation-delay: 300ms;
   transition: opacity 1s ease;
-}.aniBox5{
+}
+
+.aniBox5 {
   animation: box 1s ease;
   transition: opacity 1s ease;
   animation-delay: 400ms;
-}.aniBox6{
+}
+
+.aniBox6 {
   animation: box 1s ease;
   transition: opacity 1s ease;
   animation-delay: 500ms;
 }
-.aniBox7{
+
+.aniBox7 {
   animation: box2 1s ease;
   transition: opacity 1s ease;
 }
 
-.trans{
+.trans {
   transition: all 0.5s ease;
 }
 
-@keyframes box {
-  0% { transform: translateX(-100vw);}
-  100% {transform: translateX(0%);}
+.fab {
+  background-color: transparent;
+  height: 64px;
+  width: 64px;
+  border-radius: 32px;
+  transition: height 300ms;
+  transition-timing-function: ease;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  text-align: center;
+  overflow: hidden;
 }
 
-@keyframes box2{
-  0% {transform: translateX(100vw)}
-  100% {transform: translateX(0%)}
+.fab:hover {
+  height: 175px;
+}
+
+.fab:hover .mainop {
+  transform: scale(115%)
+}
+
+.mainop {
+  margin: auto;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: transform 300ms;
+  /* background-color: #f44336; */
+  border-radius: 32px;
+  z-index: 6;
+}
+
+.mainopShadow {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.mainop i {
+  margin-top: 16px;
+  font-size: 32px;
+  color: #fff;
+}
+
+.minifab {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  z-index: 5;
+  float: left;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  background-color: blue;
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: grid; 
+  place-items: center;
+  cursor: pointer;
+}
+
+.minifab:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.minifabIcon {
+  height: 24px;
+  width: 24px;
+}
+
+.op1 {
+  background-color: #0f9d58;
+}
+
+.op2 {
+  background-color: rgba(102, 189, 244, 0.973);
+}
+
+@keyframes box {
+  0% {
+    transform: translateX(-100vw);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes box2 {
+  0% {
+    transform: translateX(100vw)
+  }
+
+  100% {
+    transform: translateX(0%)
+  }
 }
 
 
@@ -208,13 +311,14 @@
   0% {
     opacity: 0 !important
   }
+
   100% {
     opacity: 1 !important;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .heroBg{
+  .heroBg {
     background: url("./assets/bgs/mobileBg.png") no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -249,12 +353,12 @@
     padding-top: 1rem;
   }
 
-  .slide__menu > li > a {
+  .slide__menu>li>a {
     font-size: 1.3rem;
     font-weight: bold;
   }
 
-  .slide__menu > li{
+  .slide__menu>li {
     margin-bottom: 1rem;
   }
 
@@ -276,8 +380,8 @@
   }
 }
 
-@media only screen and (min-width: 770px) and (max-width: 1121px){
-  .whypadding{
+@media only screen and (min-width: 770px) and (max-width: 1121px) {
+  .whypadding {
     margin-top: 10rem;
   }
 }

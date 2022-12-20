@@ -9,11 +9,13 @@ import BranchPage from './pages/BranchPage';
 import VirtualTour from './pages/VirtualTour';
 import Why from './pages/Why';
 import OurStars from './pages/OurStars';
+import { ToastContainer } from "react-toastify"
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <ToastContainer />
         <Navbar />
         <Routes>
           <Route path="/" exact element={<Home/>} />

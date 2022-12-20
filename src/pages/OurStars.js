@@ -1,6 +1,5 @@
 import React from 'react'
 import data from "../assets/data.json"
-import { AiOutlineDownload } from "react-icons/ai"
 
 const OurStars = () => {
   return (

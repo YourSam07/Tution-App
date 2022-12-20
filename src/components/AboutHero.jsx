@@ -1,6 +1,6 @@
 import React from 'react'
 import { useInView } from 'react-intersection-observer'
-import Director2 from "../assets/images/Director2.jpg"
+import about from "../assets/bgs/about.svg"
 import arrow from "../assets/bgs/arrow.png"
 import circle from "../assets/bgs/redCircle.png"
 import data from "../assets/data.json"
@@ -30,8 +30,8 @@ const AboutHero = () => {
         </div>
       </div>
       <div className="flex md:w-1/3 justify-center items-center">
-        <div className={inView ? "rounded-[100%] grid place-items-center h-80 w-80 bg-red-300 overflow-hidden aniBox7" : "opacity-0"}>
-          <img src={Director2} alt="" className='w-80' />
+        <div className={inView ? "grid place-items-center overflow-hidden aniBox7" : "opacity-0"}>
+          <img src={about} alt="" className='' />
         </div>
       </div>
     </div>
