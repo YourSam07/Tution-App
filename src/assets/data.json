@@ -131,6 +131,7 @@
 
   "brochures": {
     "firstpage": "/Frontpage.jpg",
-    "backpage": "/BackPage.jpg"
+    "backpage": "/BackPage.jpg",
+    "pdf": "/GravityBroucher.pdf"
   }
 }

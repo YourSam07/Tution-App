@@ -1,5 +1,5 @@
 import React from 'react'
-import Director from "../assets/images/Director2.jpg"
+import Director from "../assets/images/Director.jpg"
 import MDirector from "../assets/images/Managing Director.png"
 import Quotes from "../assets/bgs/quotes.png"
 import { useInView } from 'react-intersection-observer'

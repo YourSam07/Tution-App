@@ -48,9 +48,9 @@ const NewHero = () => {
           </div>
         </div>
         <div className="flex flex-col md:flex-row mt-8 gap-4 items-center px-6 sm:px-4 md:p-0 md:pr-8">
-          <div className="bulletin bg-[#f36a33] p-8 sm:w-1/2 lg:w-[40%] text-white">
-            <h2 className='mb-4'>Gravity Academy Bulletin</h2>
-            <marquee behavior="scroll" direction="up" height="175" scrollamount="3">
+          <div className="bulletin bg-[#e48333]  sm:w-1/2 lg:w-[40%] text-white">
+            <div className='mb-4 bg-[#0f0f0f] text-center py-2 font-extrabold font-serif text-xl'>Gravity Academy Bulletin</div>
+            <marquee behavior="scroll" direction="up" height="175" scrollamount="3" className="p-8">
               <p className='pb-4 border-b-2 border-white mt-4'>The Gravity Academy started with amazing results in Medical as well as Engineering Field.</p>
               <p className='pb-4 border-b-2 border-white mt-4'>Vivek Santosh Rahangdale got selected in AIIMS Nagpur, which is the an All India Top Rank College in 1st attempt.</p>
               <p className='pb-4 border-b-2 border-white mt-4'>Avani Ridhorkar got into NIT Raipur. Other students also bagged top admits from colleges like VNIT Nagpur, COEP pune, VIT Pune etc.</p>

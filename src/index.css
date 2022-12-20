@@ -142,50 +142,50 @@
 }
 
 .ani {
-  animation: fadeIn 2s ease;
+  animation: fadeIn 1s ease;
   transition: opacity 1s ease;
 }
 
 .aniD1{
-  animation: fadeIn 2s ease 0.5s;
+  animation: fadeIn 1s ease 0.5s;
   transition: opacity 1s ease;
 }
 
 .aniD2{
-  animation: fadeIn 2s ease 1s;
+  animation: fadeIn 1s ease 1s;
   transition: opacity 1s ease;
 }
 
 .aniBox1{
-  animation: box 2s ease;
+  animation: box 1s ease;
   transition: opacity 1s ease;
 }
 
 .aniBox2{
-  animation: box 2s ease;
+  animation: box 1s ease;
   animation-delay: 100ms;
   transition: opacity 1s ease;
 }
 .aniBox3{
-  animation: box 2s ease;
+  animation: box 1s ease;
   animation-delay: 200ms;
   transition: opacity 1s ease;
 }
 .aniBox4{
-  animation: box 2s ease;
+  animation: box 1s ease;
   animation-delay: 300ms;
   transition: opacity 1s ease;
 }.aniBox5{
-  animation: box 2s ease;
+  animation: box 1s ease;
   transition: opacity 1s ease;
   animation-delay: 400ms;
 }.aniBox6{
-  animation: box 2s ease;
+  animation: box 1s ease;
   transition: opacity 1s ease;
   animation-delay: 500ms;
 }
 .aniBox7{
-  animation: box2 2s ease;
+  animation: box2 1s ease;
   transition: opacity 1s ease;
 }
 

@@ -1,8 +1,9 @@
 import React from 'react'
 import { useInView } from 'react-intersection-observer'
-import MDirector from "../assets/images/Managing Director.png"
+import Director2 from "../assets/images/Director2.jpg"
 import arrow from "../assets/bgs/arrow.png"
 import circle from "../assets/bgs/redCircle.png"
+import data from "../assets/data.json"
 
 const AboutHero = () => {
   const {ref, inView} = useInView({
@@ -23,11 +24,14 @@ const AboutHero = () => {
           <div className={inView ? 'rounded-lg shadow-lg p-8 lg:mr-20 bg-white mt-4 aniBox2' : 'opacity-0'}>
             We celebrate diversity and strive to still intergrity, compassion and confidence in each student. We give each aspirant support and encouragement to meet the desire goal. At The Gravity Academy, We are committed to providing a happy, safe and secure environment to realize the dream of our students. Consequently, we have been picting ourselves on our reputation as a dynamic coaching institute as a whole. We encourage the vibrate and energetic students to develop their confidence and love for learning for a bright future in this competitive era.
           </div>
+          <button className="py-2 font-sans text-white bg-red-600 hover:bg-red-400 hover:scale-105 trans rounded-lg shadow-lg w-1/5 my-4">
+            <a href={data.brochures.pdf} download>Download Brochure</a>
+          </button>
         </div>
       </div>
       <div className="flex md:w-1/3 justify-center items-center">
         <div className={inView ? "rounded-[100%] grid place-items-center h-80 w-80 bg-red-300 overflow-hidden aniBox7" : "opacity-0"}>
-          <img src={MDirector} alt="" className='w-80' />
+          <img src={Director2} alt="" className='w-80' />
         </div>
       </div>
     </div>
