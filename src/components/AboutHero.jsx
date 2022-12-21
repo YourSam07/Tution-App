@@ -11,8 +11,8 @@ const AboutHero = () => {
     triggerOnce: true
   })
   return (
-    <div className="p-4 flex lg:gap-4 items-center lg:flex-row flex-col">
-      <div ref={ref} className="content lg:w-2/3 md:p-8 p-4 font-serif relative">
+    <div ref={ref} className="p-4 flex lg:gap-4 items-center lg:flex-row flex-col">
+      <div className="content lg:w-2/3 md:p-8 p-4 font-serif relative">
         <img src={arrow} alt="arrow" className={inView ? 'absolute top-36 rotate-45 ani' : 'opacity-0'} />
         <div className={inView ? "font-bold text-2xl uppercase text-amber-400 font-sans aniD2" : "opacity-0"}>About Us</div>
         <p className={inView ? "aniD1" : "opacity-0"}><span className='font-bold font-serif text-xl ani'>The Gravity Academy</span> is an educational institute thar offers very uniquely designed courses for various Engineering and medical Entrance Exams.</p>

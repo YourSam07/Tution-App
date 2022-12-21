@@ -38,14 +38,14 @@ const AboutDoD = () => {
 
 
         <div className='grid place-items-center order-3'>
-          <div ref={ref} className={inView ? "rounded-full shadow-lg relative h-[300px] w-[300px] overflow-hidden lg:m-0 my-8 mx-auto aniBox7" : "opacity-0"}>
+          <div className={inView ? "rounded-full shadow-lg relative h-[300px] w-[300px] overflow-hidden lg:m-0 my-8 mx-auto aniBox7" : "opacity-0"}>
             <img src={MDirector} alt="Director" className='h-[450px] w-[350px] hover:scale-105 hover:cursor-pointer' />
             {/* <div className='absolute bottom-10 w-full text-center bg-black opacity-60'>
             <div className='text-3xl text-white'>Mr. Akhilesh Jadhav</div>
             <div className='text-white'>Managing Director</div>
           </div> */}
           </div>
-          <div ref={ref} className={inView ? 'text-center ani' : 'opacity-0'}>
+          <div className={inView ? 'text-center ani' : 'opacity-0'}>
             <div className='text-3xl'>Mr. Akhilesh Jadhav</div>
             <div className=''>Managing Director</div>
           </div>

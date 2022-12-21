@@ -11,9 +11,8 @@ const AboutMIsVis = () => {
     triggerOnce: true
   })
   return (
-    <div className='flex flex-col p-8 lg:px-40 justify-center'>
-      
-      <div ref={ref} className="flex flex-col gap-6 sm:flex-row items-center justify-between">
+    <div ref={ref} className='flex flex-col p-8 lg:px-40 justify-center'>
+      <div className="flex flex-col gap-6 sm:flex-row items-center justify-between">
         <div className={inView ? 'relative grid place-items-center aniBox1' : 'opacity-0'}>
           <img src={vision} alt="vision" className='sm:w-[80%]' />
         </div>
@@ -24,7 +23,7 @@ const AboutMIsVis = () => {
         </div>
       </div>
 
-      <div ref={ref} className="flex flex-col sm:flex-row-reverse gap-6 items-center justify-between">
+      <div className="flex flex-col sm:flex-row-reverse gap-6 items-center justify-between">
         <div className={inView ? 'relative grid place-items-center aniBox7' : 'opacity-0'}>
           <img src={mission} alt="vision" className='sm:w-[70%]' />
         </div>
