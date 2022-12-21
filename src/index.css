@@ -212,14 +212,15 @@
   bottom: 50px;
   text-align: center;
   overflow: hidden;
+  cursor: pointer;
 }
 
-.fab:hover {
+/* .fab:hover {
   height: 175px;
-}
+} */
 
 .fab:hover .mainop {
-  transform: scale(115%)
+  /* transform: rotate(360deg) */
 }
 
 .mainop {

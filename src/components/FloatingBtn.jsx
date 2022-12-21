@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import whatsapp from "../assets/bgs/whatsapp.png"
 import call from "../assets/bgs/call.png"
 import chat from "../assets/bgs/chat.png"
 const FloatingBtn = () => {
+  const [open, setOpen] = useState(false)
   return (
     <div>
       <div className="mainopShadow"></div>
-      <div className="fab">
-        <div className="mainop grid place-items-center bg-white">
+      <div className="fab" onClick={() => setOpen(!open)}>
+        <div className={open ? "mainop grid place-items-center bg-white h-[175px]" : "mainop grid place-items-center bg-white"}>
           <img src={chat} alt="chat" className='w-8' />
         </div>
         <div id="sheets" className="minifab op2">
