@@ -38,6 +38,10 @@ const Navbar = () => {
     if (location.pathname === '/') setShowNav(false)
   }, [])
 
+  useEffect(() => {
+    setMenuOpen(false)
+  }, [location.pathname])
+
   // console.log(menuOpen)
   return (
     <nav className={showNav ? 'fixed z-50 w-full top-0 left-0' : "hidden"}>

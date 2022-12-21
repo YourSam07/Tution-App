@@ -9,6 +9,7 @@ import BranchPage from './pages/BranchPage';
 import VirtualTour from './pages/VirtualTour';
 import Why from './pages/Why';
 import OurStars from './pages/OurStars';
+import FloatingBtn from './components/FloatingBtn';
 import { ToastContainer } from "react-toastify"
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/stars" element ={<OurStars />} />
         </Routes>
         <Footer />
+        <FloatingBtn />
       </Router>
     </div>
   );

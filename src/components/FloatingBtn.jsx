@@ -2,7 +2,7 @@ import React from 'react'
 import whatsapp from "../assets/bgs/whatsapp.png"
 import call from "../assets/bgs/call.png"
 import chat from "../assets/bgs/chat.png"
-const floatingBtn = () => {
+const FloatingBtn = () => {
   return (
     <div>
       <div className="mainopShadow"></div>
@@ -25,4 +25,4 @@ const floatingBtn = () => {
   )
 }
 
-export default floatingBtn
+export default FloatingBtn

@@ -27,7 +27,7 @@ const Footer = () => {
           <BsLinkedin size={24}/>
         </div>
         <div className='mt-2'>
-        Copyright ©2022 All rights reserved by Pdigiworld
+        Copyright ©2022 All rights reserved by Elite360 Studio
         </div>
       </div>
     </div>

@@ -318,6 +318,11 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .fab, .mainopShadow{
+    bottom: 15px;
+    right: 15px;
+  }
+
   .heroBg {
     background: url("./assets/bgs/mobileBg.png") no-repeat;
     background-attachment: fixed;

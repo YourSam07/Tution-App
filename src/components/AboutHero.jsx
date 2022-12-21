@@ -24,7 +24,7 @@ const AboutHero = () => {
           <div className={inView ? 'rounded-lg shadow-lg p-8 lg:mr-20 bg-white mt-4 aniBox2' : 'opacity-0'}>
             We celebrate diversity and strive to still intergrity, compassion and confidence in each student. We give each aspirant support and encouragement to meet the desire goal. At The Gravity Academy, We are committed to providing a happy, safe and secure environment to realize the dream of our students. Consequently, we have been picting ourselves on our reputation as a dynamic coaching institute as a whole. We encourage the vibrate and energetic students to develop their confidence and love for learning for a bright future in this competitive era.
           </div>
-          <button className="py-2 font-sans text-white bg-red-600 hover:bg-red-400 hover:scale-105 trans rounded-lg shadow-lg w-1/5 my-4">
+          <button className="py-2 font-sans text-white bg-red-600 hover:bg-red-400 hover:scale-105 trans rounded-lg shadow-lg md:w-1/5 w-3/4 my-4">
             <a href={data.brochures.pdf} download>Download Brochure</a>
           </button>
         </div>

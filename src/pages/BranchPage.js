@@ -34,7 +34,7 @@ const BranchPage = () => {
           <div ref={ref} className={inView ? 'flex flex-col aniBox1 xl:w-1/2' :'opacity-0'}>
             <h2 className='font-serif font-extrabold text-[2rem]'>Head Office Address</h2>
             <h4 className='font-sans text-xl'>Chattrapati Sq.,6A, Matruchhaya Modern Society Nagpur</h4>
-            <h4 className='font-sans text-xl'>Mob No.:- 8668631102, 8855973492, 8668376653</h4>
+            <h4 className='font-sans text-xl'>Mob No.:- +91 7276131102, +91 8855973492</h4>
           </div>
           <div ref={ref} className={inView ? 'map xl:w-1/2 aniBox7' : 'opacity-0'}>
             <iframe className='rounded-md shadow-lg overflow-hidden' title="map" width={mobileView ? "350" : "600"}  height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=6-192,%20Srinagar%20-%20Kanyakumari%20Hwy,%20Narendra%20Nagar,%20Chatrapati%20Nagar,%20Nagpur,%20Maharashtra%20440015+(Head%20Office%20-%20Chatrappati%20Sqaure)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure area map</a>
@@ -46,7 +46,7 @@ const BranchPage = () => {
           <div ref={ref} className={inView ? 'flex flex-col xl:w-1/2 aniBox7' : 'opacity-0'}>
             <h2 className='font-serif font-extrabold text-[2rem]'>Branch Office Address</h2>
             <h4 className='font-sans text-xl'>Omkar Nagar Near Era International School Residential Campus Nagpur</h4>
-            <h4 className='font-sans text-xl'>Mob No.:- 8668631102, 8855973492, 8668376653</h4>
+            <h4 className='font-sans text-xl'>Mob No.:- +91 7276131102, +91 8855973492</h4>
           </div>
           <div className={inView ? 'map xl:w-1/2 aniBox1' : 'opacity-0'}>
             <iframe className='rounded-md shadow-lg overflow-hidden' title="map" height="300" width={mobileView ? "350" : "600"} frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=6-192,%20Srinagar%20-%20Kanyakumari%20Hwy,%20Narendra%20Nagar,%20Chatrapati%20Nagar,%20Nagpur,%20Maharashtra%20440015+(Head%20Office%20-%20Chatrappati%20Sqaure)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure area map</a>

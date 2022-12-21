@@ -49,7 +49,7 @@ const ContactLeftSide = () => {
                 <p className='text-[0.9rem]'>Mon to Sat 9:00 AM to 6:00 PM</p>
               </div>
             </div>
-            <p className='text-[0.9rem]'>+91 8668631102, +91 8855973492, +91 8668376653</p>
+            <p className='text-[0.9rem]'>+91 7276131102, +91 8855973492</p>
           </div>
           <div ref={ref} className={inView ? "flex-col mt-8 text-black px-6 py-4 rounded-md shadow-lg bg-[#FFF7F7] aniBox7" : "opacity-0"}>
             <div className="flex items-center">
@@ -61,7 +61,7 @@ const ContactLeftSide = () => {
                 <p className='text-[0.9rem]'>Send us your query anytime!</p>
               </div>
             </div>
-            <p className='text-[0.9rem]'>gravityiitjeeacademy@gmail.com<span className='opacity-0'>Lorem ipsum dolor sit amet </span></p>
+            <p className='text-[0.9rem]'>gravityacademyngp@gmail.com<span className='opacity-0'>Lorem ipsum dolor sit amet </span></p>
           </div>
         </div>
       </div>
