@@ -96,8 +96,8 @@ const NewHero = () => {
       </div>
       {openPopUp ?
         <div className=''>
-          <div className="bg-black absolute top-0 left-0 opacity-70 h-[100vh] w-full" onClick={() => setOpenPopUp(false)}></div>
-          <div className="flex flex-col justify-center z-50 top-[2%] left-0 lg:translate-x-full sm:translate-x-1/2 translate-x-[18%] absolute p-8 bg-white rounded-lg shadow-lg md:w-1/3 sm:w-1/2 w-3/4">
+          <div className="bg-black fixed z-40 top-0 left-0 opacity-70 h-[100vh] w-full" onClick={() => setOpenPopUp(false)}></div>
+          <div className="flex flex-col justify-center z-50 top-[2%] left-0 lg:translate-x-full sm:translate-x-1/2 translate-x-[18%] fixed p-8 bg-white rounded-lg shadow-lg md:w-1/3 sm:w-1/2 w-3/4">
             <div>
               <img src={popup} alt="" />
             </div>

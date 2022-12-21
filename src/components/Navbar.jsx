@@ -44,7 +44,7 @@ const Navbar = () => {
 
   // console.log(menuOpen)
   return (
-    <nav className={showNav ? 'fixed z-50 w-full top-0 left-0' : "hidden"}>
+    <nav className={showNav ? 'fixed z-40 w-full top-0 left-0' : "hidden"}>
       <div className="nav flex px-4 justify-between items-center shadow-md rounded-md bg-white w-full">
         <div className="w-28">
           <img src={logo} alt="logo" />

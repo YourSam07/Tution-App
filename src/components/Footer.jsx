@@ -12,12 +12,14 @@ const Footer = () => {
       </div>
       <div className="mt-4 md:w-3/4">The Gravity Academy is an educational institute that offer very uniquely designed courses for various engineering and medical entrance exam.</div>
       <div className="links flex flex-col md:flex-row items-center mt-4">
-        <Link to='/' className='cursor-pointer'>Home<span className='px-4 hidden md:none md:inline'>|</span></Link>
-        <Link to='/about' className='cursor-pointer'>About<span className='px-4 hidden md:inline'>|</span></Link>
-        <Link to='/why' className='cursor-pointer'>Why Gravity Academy<span className='px-4 hidden md:inline'>|</span></Link>
-        <Link to='/branches' className='cursor-pointer'>Branches<span className='px-4 hidden md:inline'>|</span></Link>
-        <Link to='/gallery' className='cursor-pointer'>Gallery<span className='px-4 hidden md:inline'>|</span></Link>
-        <Link to='/contact' className='cursor-pointer'>Contact</Link>
+        <Link to='/' className='cursor-pointer hover:underline'>Home<span className='px-4 hidden md:none md:inline'>|</span></Link>
+        <Link to='/about' className='cursor-pointer hover:underline'>About<span className='px-4 hidden md:inline'>|</span></Link>
+        <Link to='/why' className='cursor-pointer hover:underline'>Why Gravity Academy<span className='px-4 hidden md:inline'>|</span></Link>
+        <Link to='/branches' className='cursor-pointer hover:underline'>Branches<span className='px-4 hidden md:inline'>|</span></Link>
+        <Link to='/gallery' className='cursor-pointer hover:underline'>Gallery<span className='px-4 hidden md:inline'>|</span></Link>
+        <Link to='/vrtour' className='cursor-pointer hover:underline'>Virtual Tour<span className='px-4 hidden md:inline'>|</span></Link>
+        <Link to='/stars' className='cursor-pointer hover:underline'>Our Stars<span className='px-4 hidden md:inline'>|</span></Link>
+        <Link to='/contact' className='cursor-pointer hover:underline'>Contact</Link>
       </div>
       <div className="flex flex-col items-center mt-4">
         <div className="flex gap-4">
