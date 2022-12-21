@@ -7,6 +7,7 @@ import emailjs from '@emailjs/browser'
 import data from "../assets/data.json"
 import { toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import { Link } from 'react-router-dom'
 
 const NewHero = () => {
   const [openPopUp, setOpenPopUp] = useState(false)
@@ -68,7 +69,7 @@ const NewHero = () => {
               {menuData.map((item, index) => {
                 return <li key={index}>
                   <span className={item.active ? "hoverEffect" : "hidden"}>{`>   `}</span>
-                  <a href={item.href} className={item.active ? "hoverEffect" : ""} onMouseEnter={() => activeHover(index)} onMouseLeave={() => activeHover(index)}>{item.title}</a>
+                  <Link to={item.href} className={item.active ? "hoverEffect" : ""} onMouseEnter={() => activeHover(index)} onMouseLeave={() => activeHover(index)}>{item.title}</Link> 
                 </li>
               })}
             </ul>
@@ -87,9 +88,9 @@ const NewHero = () => {
             </marquee>
           </div>
           <div className="entrance grid place-items-center sm:block sm:w-1/2 lg:w-[40%]">
-            <a href={data.brochures.pdf} download onClick={() => notify()}>
+            <Link to={data.brochures.pdf} download onClick={() => notify()}>
               <img src={temp} alt="" className='' />
-            </a>
+            </Link> 
           </div>
         </div>
       </div>

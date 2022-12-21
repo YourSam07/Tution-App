@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import logo from "../assets/logos/gl3.png"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { AiOutlineClose } from "react-icons/ai"
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const branches = [
   { name: "Chattrapti Sqaure", link: "/branches#square" },
@@ -52,47 +52,38 @@ const Navbar = () => {
         {menuOpen ?
           <ul className='slide__menu font-serif'>
             <li className="nav__menu-item">
-              <a href="/">Home</a>
+              <Link to="/" >Home</Link>
             </li>
             <li
               className="nav__menu-item"
             >
-              <a href="/about">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li className="nav__menu-item">
-              <a href="/why">Why gravity Academy</a>
+              <Link to="/why">Why gravity Academy</Link>
             </li>
             <li className="nav__menu-item">
-              <a href="/branches" onClick={() => setBranchClicked(!branchClicked)}>Branches</a>
+              <Link to="/branches" onClick={() => setBranchClicked(!branchClicked)}>Branches</Link>
               {branchClicked ?
                 <ul className="mobile__submenu">
                   {(branches.map(item => <li>
-                    <a href={item.link}>{item.name}</a>
+                    <Link to={item.link}>{item.name}</Link>
                   </li>))}
                 </ul>
                 : null}
             </li>
             <li className="nav__menu-item">
-              <a href="/stars">Our Stars</a>
+              <Link to="/stars">Our Stars</Link>
             </li>
             <li className="nav__menu-item">
-              <a href="/vrtour">Virtual Tour</a>
+              <Link to="/vrtour">Virtual Tour</Link>
             </li>
             <li className="nav__menu-item">
-              <a href="/gallery">Gallery</a>
+              <Link to="/gallery">Gallery</Link>
             </li>
-            {/* <li className="nav__menu-item">
-            <a href="/" onClick={() => setCoursesClicked(!coursesClicked)}>Courses</a>
-            {coursesClicked ?
-              <ul className="mobile__submenu">
-                {(courses.map(item => <li>
-                  <a href={item.link}>{item.name}</a>
-                </li>))}
-              </ul>
-              : null}
-          </li> */}
+            
             <li className="nav__menu-item">
-              <a href="/contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
           : null}
@@ -100,35 +91,31 @@ const Navbar = () => {
         {/* Desktop View  */}
         <ul className="nav__menu flex items-center flex-wrap">
           <li className="nav__menu-item">
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li
             className="nav__menu-item"
           >
-            <a href="/about">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li className="nav__menu-item">
-            <a href="/why">Why gravity Academy</a>
+            <Link to="/why">Why gravity Academy</Link>
           </li>
           <li className="nav__menu-item">
-            <a href="/branches">Branches</a>
+            <Link to="/branches">Branches</Link>
             <Submenu arr={branches} />
           </li>
           <li className="nav__menu-item">
-            <a href="/stars">Our Stars</a>
+            <Link to="/stars">Our Stars</Link>
           </li>
           <li className="nav__menu-item">
-            <a href="/gallery">Gallery</a>
+            <Link to="/gallery">Gallery</Link>
           </li>
           <li className="nav__menu-item">
-            <a href="/vrtour">Virtual Tour</a>
+            <Link to="/vrtour">Virtual Tour</Link>
           </li>
-          {/* <li className="nav__menu-item">
-          <a href="/">Courses</a>
-          <Submenu arr={courses} />
-        </li> */}
           <li className="nav__menu-item">
-            <a href="/contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </div>
@@ -141,7 +128,7 @@ const Submenu = ({ arr }) => {
     <ul className="nav__submenu z-20">
       {arr.map(item =>
         <li className="nav__submenu-item">
-          <a href={item.link}>{item.name}</a>
+          <Link to={item.link}>{item.name}</Link>
         </li>)
       }
     </ul>
