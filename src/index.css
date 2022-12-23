@@ -99,7 +99,7 @@
 }
 
 .heroBg {
-  background: url("./assets/bgs/herobg.png") no-repeat;
+  background: url("./assets/bgs/newhero.jpg") no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -123,11 +123,6 @@
 
 .about {
   background: url("./assets/bgs/aboutCP2.svg") no-repeat;
-  background-size: cover;
-}
-
-.misvis {
-  background: url("./assets/bgs/bgvismis.png") no-repeat;
   background-size: cover;
 }
 

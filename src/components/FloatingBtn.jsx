@@ -18,7 +18,7 @@ const FloatingBtn = () => {
           </a>
         </div>
         <div id="docs" className="minifab op1">
-          <a href="https://wa.me/+919075957279" target="_blank" rel="noreferrer" >
+          <a href="https://wa.me/+918855973492" target="_blank" rel="noreferrer" >
             <img className="minifabIcon" src={whatsapp} alt="whatsapp" />
           </a>
         </div>
