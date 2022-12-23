@@ -213,14 +213,15 @@
   text-align: center;
   overflow: hidden;
   cursor: pointer;
+  z-index: 50;
 }
 
-/* .fab:hover {
+.fab:hover {
   height: 175px;
-} */
+}
 
 .fab:hover .mainop {
-  /* transform: rotate(360deg) */
+  transform: rotate(360deg)
 }
 
 .mainop {
