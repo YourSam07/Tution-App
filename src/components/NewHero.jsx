@@ -13,7 +13,7 @@ const NewHero = () => {
     { title: "Home", active: false, href: "/" },
     { title: "About", active: false, href: "/about" },
     { title: "Why Gravity Academy", active: false, href: "/why" },
-    { title: "Branches", active: false, href: "/branches" },
+    { title: "Hostels", active: false, href: "/hostels" },
     { title: "Our Stars", active: false, href: "/stars" },
     { title: "Gallery", active: false, href: "/gallery" },
     { title: "Virtual Tour", active: false, href: "/vrtour" },
