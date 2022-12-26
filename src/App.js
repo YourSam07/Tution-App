@@ -5,12 +5,12 @@ import About from './pages/About';
 import Footer from './components/Footer'
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
-import BranchPage from './pages/BranchPage';
 import VirtualTour from './pages/VirtualTour';
 import Why from './pages/Why';
 import OurStars from './pages/OurStars';
 import FloatingBtn from './components/FloatingBtn';
 import { ToastContainer } from "react-toastify"
+import Hostel from './pages/Hostel';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/gallery" element={<Gallery/>} />
           <Route path="/contact" element={<Contact/>} />
-          <Route path="/branches" element={<BranchPage />} />
+          <Route path="/hostels" element={<Hostel />} />
           <Route path="/why" element={<Why />} />
           <Route path="/vrtour" element ={<VirtualTour />} />
           <Route path="/stars" element ={<OurStars />} />

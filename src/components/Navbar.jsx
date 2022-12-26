@@ -67,14 +67,14 @@ const Navbar = () => {
               <Link to="/why">Why gravity Academy</Link>
             </li>
             <li className="nav__menu-item">
-              <Link to="/branches" onClick={() => setBranchClicked(!branchClicked)}>Branches</Link>
-              {branchClicked ?
+              <Link to="/hostels" onClick={() => setBranchClicked(!branchClicked)}>Hostels</Link>
+              {/* {branchClicked ?
                 <ul className="mobile__submenu">
                   {(branches.map(item => <li>
                     <Link to={item.link}>{item.name}</Link>
                   </li>))}
                 </ul>
-                : null}
+                : null} */}
             </li>
             <li className="nav__menu-item">
               <Link to="/stars">Our Stars</Link>
@@ -106,8 +106,8 @@ const Navbar = () => {
             <Link to="/why">Why gravity Academy</Link>
           </li>
           <li className="nav__menu-item">
-            <Link to="/branches">Branches</Link>
-            <Submenu arr={branches} />
+            <Link to="/hostels">Hostels</Link>
+            {/* <Submenu arr={branches} /> */}
           </li>
           <li className="nav__menu-item">
             <Link to="/stars">Our Stars</Link>
