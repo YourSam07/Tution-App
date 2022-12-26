@@ -121,7 +121,7 @@
 }
 
 .heroBg {
-  background: url("./assets/bgs/newhero.jpg") no-repeat;
+  background: url("./assets/bgs/herobg.png") no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -358,7 +358,6 @@
     min-height: 95vh;
   }
   
-
   .nav__menu {
     display: none;
   }
