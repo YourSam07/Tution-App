@@ -40,6 +40,8 @@ const Navbar = () => {
 
   useEffect(() => {
     setMenuOpen(false)
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0;
   }, [location.pathname])
 
   // console.log(menuOpen)
@@ -85,7 +87,7 @@ const Navbar = () => {
             <li className="nav__menu-item">
               <Link to="/gallery">Gallery</Link>
             </li>
-            
+
             <li className="nav__menu-item">
               <Link to="/contact">Contact</Link>
             </li>
