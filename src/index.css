@@ -417,3 +417,16 @@
     margin-top: 10rem;
   }
 }
+
+@media only screen and (min-width: 1024px ) and (max-width: 1460px) {
+  .niche{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 1460px) {
+  .niche{
+    flex-direction: row;
+  }
+}

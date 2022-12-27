@@ -73,8 +73,8 @@ const NewHero = () => {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row mt-8 gap-4 items-center sm:px-4 md:p-0 md:pr-8">
-          <div className="bulletin bg-white h-52 sm:w-96 w-[95%]">
+        <div className="flex flex-col niche mt-8 gap-4 items-center sm:px-4 md:p-0 md:pr-8">
+          <div className="bulletin bg-white h-52 sm:w-[22rem] w-[95%]">
             <div className='mb-4 bg-[#0f0f0f] text-white text-center py-2 font-extrabold font-serif text-xl'>Gravity Academy Bulletin</div>
             <marquee behavior="scroll" direction="up" height="140" scrollamount="3" className="p-8">
               <p className='pb-4 border-b-2 border-black mt-4'>{`>  `}The Gravity Academy started with amazing results in Medical as well as Engineering Field.</p>
@@ -90,7 +90,7 @@ const NewHero = () => {
               <img src={temp} alt="" className='' />
             </Link> 
           </div> */}
-          <div className="bulletin bg-white text-center h-52 sm:w-96 w-[95%] flex flex-col justify-between items-center">
+          <div className="bulletin bg-white text-center h-52 sm:w-[22rem] w-[95%] flex flex-col justify-between items-center">
             <div className='bg-[#0f0f0f] text-white text-center py-2 font-extrabold font-serif text-xl w-full'>Admission Open</div>
             <div className='py-2 border-y-2 border-black mx-8'>JEE/NEET/FOUNDATION ASPIRANTS</div>
             <button className='bg-[black] text-white py-2 mb-4 px-4 rounded-lg hover:bg-[#e41c24] hover:text-black trans'>
