@@ -15,7 +15,7 @@ const Footer = () => {
         <Link to='/' className='cursor-pointer hover:underline'>Home<span className='px-4 hidden md:none md:inline'>|</span></Link>
         <Link to='/about' className='cursor-pointer hover:underline'>About<span className='px-4 hidden md:inline'>|</span></Link>
         <Link to='/why' className='cursor-pointer hover:underline'>Why Gravity Academy<span className='px-4 hidden md:inline'>|</span></Link>
-        <Link to='/branches' className='cursor-pointer hover:underline'>Branches<span className='px-4 hidden md:inline'>|</span></Link>
+        <Link to='/hostels' className='cursor-pointer hover:underline'>Hostels<span className='px-4 hidden md:inline'>|</span></Link>
         <Link to='/gallery' className='cursor-pointer hover:underline'>Gallery<span className='px-4 hidden md:inline'>|</span></Link>
         <Link to='/vrtour' className='cursor-pointer hover:underline'>Virtual Tour<span className='px-4 hidden md:inline'>|</span></Link>
         <Link to='/stars' className='cursor-pointer hover:underline'>Our Stars<span className='px-4 hidden md:inline'>|</span></Link>
