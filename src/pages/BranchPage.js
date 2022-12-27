@@ -48,7 +48,7 @@ const BranchPage = () => {
             <h4 className='font-sans text-xl'>Mob No.:- +91 7276131102, +91 8855973492, +91 8668376653</h4>
           </div>
           <div className={inView ? 'map xl:w-1/2 aniBox1' : 'opacity-0'}>
-            <iframe className='rounded-md shadow-lg overflow-hidden' title="map" height="300" width={mobileView ? "350" : "600"} frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=6-192,%20Srinagar%20-%20Kanyakumari%20Hwy,%20Narendra%20Nagar,%20Chatrapati%20Nagar,%20Nagpur,%20Maharashtra%20440015+(Head%20Office%20-%20Chatrappati%20Sqaure)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure area map</a>
+            <iframe className='rounded-md shadow-lg overflow-hidden' title="map" height="300" width={mobileView ? "350" : "600"} frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59549.26614705277!2d79.0672406!3d21.1193772!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf40ad9ffa15%3A0x856f8b0b949f097a!2sGravity%20Academy!5e0!3m2!1sen!2sin!4v1672129853861!5m2!1sen!2sin"><a href="https://www.maps.ie/distance-area-calculator.html">measure area map</a>
             </iframe>
           </div>
 
