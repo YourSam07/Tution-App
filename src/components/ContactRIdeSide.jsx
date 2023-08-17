@@ -48,7 +48,7 @@ const ContactRIdeSide = () => {
         </form>
         <div className='mt-4 flex items-center'><span className='w-1/2 h-[1px] mr-2 bg-black'></span> or <span className='ml-2 w-1/2 h-[1px] bg-black'></span></div>
         <button className='px-6 py-2 mt-4 bg-green-400 shadow-md rounded-sm hover:bg-green-200'>
-          <a href="https://wa.me/+919075957279" target="_blank" rel="noreferrer" className='flex gap-2 items-center justify-center'>
+          <a href="https://wa.me/+918855973492" target="_blank" rel="noreferrer" className='flex gap-2 items-center justify-center'>
             <span>Message on Whatsapp</span>
             <span><FaWhatsapp size={28} /></span>
           </a>
